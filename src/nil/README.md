@@ -17,7 +17,7 @@ emacs lsp-bridge nil language server environment installed by Nix Pacakge Manage
 |-----|-----|-----|-----|
 | version | Version of Nix to install. | string | latest |
 | multiUser | Perform a multi-user install (instead of single user) | boolean | true |
-| packages | Optinal comma separated list of Nix packages to install in profile. Default is the language server pacakge. | string | - |
+| packages | Optinal additional comma separated list of Nix packages to install in profile besides default language server pacakge. | string | - |
 | useAttrPath | Enable this option to use exact attribute path of the package in the Nixpkgs repository, aligning with the nix-env -iA command. | boolean | true |
 | flakeUri | Optional URI to a Nix Flake to install in profile. | string | - |
 | extraNixConfig | Optional comma separated list of extra lines to add to /etc/nix/nix.conf. | string | - |
