@@ -1,14 +1,6 @@
 #!/bin/bash
 set -eu
 
-# Check if the SSHD configuration file exists or the SSH server process is running
-# if [ -f /etc/ssh/sshd_config ] || pgrep -x "sshd" > /dev/null; then
-#     echo "SSHD feature is installed."
-# else
-#     echo "Error: SSHD feature is not installed. Please install the SSHD feature and try again."
-#     exit 1
-# fi
-
 PYTHON_CMD="/tmp/lsp-bridge-venv/bin/python3"
 LSP_BRIDGE_SCRIPT="/tmp/lsp-bridge/lsp_bridge.py"
 LOG_FILE="/tmp/lsp-bridge.log"

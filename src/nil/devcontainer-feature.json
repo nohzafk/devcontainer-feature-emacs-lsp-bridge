@@ -1,6 +1,6 @@
 {
     "id": "nil",
-    "version": "0.1",
+    "version": "0.1.0",
     "name": "emacs lsp-bridge nil language server",
     "description": "emacs lsp-bridge nil language server environment installed by Nix Pacakge Manager",
     "options": {
@@ -21,7 +21,7 @@
         "packages": {
             "type": "string",
             "default": "",
-            "description": "Optional comma separated list of Nix packages to install in profile."
+            "description": "Optinal comma separated list of Nix packages to install in profile. Default is the language server pacakge."
         },
         "useAttrPath": {
             "type": "boolean",
