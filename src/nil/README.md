@@ -1,13 +1,13 @@
 
-# emacs lsp-bridge nil language server (nil)
+# Nix Package Manager (nix)
 
-emacs lsp-bridge nil language server environment installed by Nix Pacakge Manager
+Installs the Nix package manager and optionally a set of packages.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/nil:0": {}
+    "ghcr.io/devcontainers/features/nix:1": {}
 }
 ```
 
@@ -61,4 +61,4 @@ This Feature should work on recent versions of Debian/Ubuntu-based distributions
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/nohzafk/devcontainer-feature-emacs-lsp-bridge/blob/main/src/nil/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/features/blob/main/src/nix/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
