@@ -1,0 +1,10 @@
+{
+    "additional_packages": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "nil": {
+                "packages": "nodePackages.nodejs,nixpkgs.vim"
+            }
+        }
+    }
+}

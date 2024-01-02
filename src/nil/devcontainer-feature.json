@@ -21,7 +21,7 @@
         "packages": {
             "type": "string",
             "default": "",
-            "description": "Optinal comma separated list of Nix packages to install in profile. Default is the language server pacakge."
+            "description": "Optinal additional comma separated list of Nix packages to install in profile besides default language server pacakge."
         },
         "useAttrPath": {
             "type": "boolean",
@@ -47,5 +47,5 @@
         "PATH": "/nix/var/nix/profiles/default/bin:/nix/var/nix/profiles/default/sbin:${PATH}"
     },
     "entrypoint": "/usr/local/share/nix-entrypoint.sh",
-    "postCreateCommand": "bash /tmp/lsp-bridge-start.sh"
+    "updateContentCommand": "bash /tmp/lsp-bridge-start.sh"
 }

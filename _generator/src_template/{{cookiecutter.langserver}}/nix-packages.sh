@@ -1,1 +1,1 @@
-PACKAGES="{{cookiecutter.packages}}"
+LANGSERVER_PACKAGES="{{cookiecutter.packages}}"

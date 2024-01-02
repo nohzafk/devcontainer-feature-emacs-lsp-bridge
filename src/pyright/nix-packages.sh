@@ -1,1 +1,1 @@
-PACKAGES="nodePackages.pyright"
+LANGSERVER_PACKAGES="nodePackages.pyright"

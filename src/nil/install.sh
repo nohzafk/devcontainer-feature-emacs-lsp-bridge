@@ -1,7 +1,7 @@
 #!/bin/bash
 # Move to the same directory as this script
 set -e
-FEATURE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+FEATURE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${FEATURE_DIR}"
 
 # Option defaults
@@ -23,12 +23,16 @@ fi
 # Import common utils
 . ./utils.sh
 
+# Import pre-defined packages
+. ./nix-packages.sh
+
 if [ -z "$PACKAGES" ]; then
-    # Import pre-defined packages
-    . ./nix-packages.sh
-    PACKAGES="${PACKAGES//,/ }"
-    PACKAGES=$(add_nixpkgs_prefix "$PACKAGES")
+    PACKAGES="${LANGSERVER_PACKAGES//,/ }"
+else
+    LANGSERVER_PACKAGES="${LANGSERVER_PACKAGES//,/ }"
+    PACKAGES="$PACKAGES $LANGSERVER_PACKAGES"
 fi
+PACKAGES=$(add_nixpkgs_prefix "$PACKAGES")
 
 detect_user USERNAME
 
@@ -97,17 +101,17 @@ fi
 # Set nix config
 mkdir -p /etc/nix
 create_or_update_file /etc/nix/nix.conf 'sandbox = false'
-if  [ ! -z "${FLAKEURI}" ] && [ "${FLAKEURI}" != "none" ]; then
+if [ ! -z "${FLAKEURI}" ] && [ "${FLAKEURI}" != "none" ]; then
     create_or_update_file /etc/nix/nix.conf 'experimental-features = nix-command flakes'
 fi
 # Extra nix config
 if [ ! -z "${EXTRANIXCONFIG}" ]; then
     OLDIFS=$IFS
     IFS=","
-        read -a extra_nix_config <<< "$EXTRANIXCONFIG"
-        for line in "${extra_nix_config[@]}"; do
-            create_or_update_file /etc/nix/nix.conf "$line"
-        done
+    read -a extra_nix_config <<<"$EXTRANIXCONFIG"
+    for line in "${extra_nix_config[@]}"; do
+        create_or_update_file /etc/nix/nix.conf "$line"
+    done
     IFS=$OLDIFS
 fi
 
@@ -117,7 +121,7 @@ if [ ! -e "/usr/local/share/nix-entrypoint.sh" ]; then
         echo "(*) Setting up entrypoint..."
         cp -f nix-entrypoint.sh /usr/local/share/
     else
-        echo -e '#!/bin/bash\nexec "$@"' > /usr/local/share/nix-entrypoint.sh
+        echo -e '#!/bin/bash\nexec "$@"' >/usr/local/share/nix-entrypoint.sh
     fi
     chmod +x /usr/local/share/nix-entrypoint.sh
 fi

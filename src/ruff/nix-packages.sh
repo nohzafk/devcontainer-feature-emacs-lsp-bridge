@@ -1,1 +1,1 @@
-PACKAGES="ruff-lsp"
+LANGSERVER_PACKAGES="ruff-lsp"
