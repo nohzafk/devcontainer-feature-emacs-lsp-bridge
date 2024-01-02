@@ -17,5 +17,6 @@ if ! pidof $PYTHON_CMD > /dev/null 2>&1; then
     else
         echo -e 'Start lsp-bridge process successfully' | tee >> $LOG_FILE
     fi
+    # make background job keep running
+    disown
 fi
-disown

@@ -41,7 +41,7 @@
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils",
-        "ghcr.io/devcontainers/features/sshd:"
+        "ghcr.io/devcontainers/features/sshd"
     ],
     "containerEnv": {
         "PATH": "/nix/var/nix/profiles/default/bin:/nix/var/nix/profiles/default/sbin:${PATH}"

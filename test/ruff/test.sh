@@ -27,6 +27,7 @@ cat /etc/os-release
 # The 'check' command comes from the dev-container-features-test-lib.
 check "nix-env" type nix-env
 check "ruff-lsp installed" type ruff-lsp
+check "lsp_bridge can be started successfully" cat /tmp/lsp-bridge.log | grep successfully
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.
