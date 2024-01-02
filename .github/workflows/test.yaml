@@ -13,8 +13,9 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - nil
+          - pyright
+          - ruff
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -34,8 +35,9 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - nil
+          - pyright
+          - ruff
     steps:
       - uses: actions/checkout@v3
 
