@@ -18,8 +18,9 @@
         }
     },
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/python:1": {}
     },
     "remoteUser": "node",
-    "updateContentCommand": "npm install -g @devcontainers/cli"
+    "updateContentCommand": "npm install -g @devcontainers/cli; pipx install cookiecutter"
 }

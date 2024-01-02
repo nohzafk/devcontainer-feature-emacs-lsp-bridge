@@ -1,0 +1,17 @@
+[
+    {
+        "langserver": "nil",
+        "packages": "nil",
+        "langserver_binary": "nil"
+    },
+    {
+        "langserver": "pyright",
+        "packages": "nodePackages.pyright",
+        "langserver_binary": "pyright-langserver"
+    },
+    {
+        "langserver": "ruff",
+        "packages": "ruff-lsp",
+        "langserver_binary": "ruff-lsp"
+    }
+]
