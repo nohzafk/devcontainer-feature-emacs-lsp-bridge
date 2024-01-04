@@ -2,12 +2,12 @@
 
 pkgs.stdenv.mkDerivation {
   pname = "lsp-bridge-src";
-  version = "20231223";
+  version = "20240103";
   src = pkgs.fetchFromGitHub {
     owner = "nohzafk";
     repo = "lsp-bridge";
-    rev = "fix/remote-no-popup-menu";
-    sha256 = "sha256-3b4u+/QcwdcBl3m4cGb6ycl2DCz4DmRN/3lg5cRSyT8";
+    rev = "dfc5c3210ec1d6c421ef38e51e30f568ad4a3a54";
+    sha256 = "sha256-QKuOBNRGpN83d+/8rsSTRhtAP1f/oYMNEtkZuBVqlj4=";
   };
   buildInputs = [ pkgs.python311Packages.python ];
   dontConfigure = true;
