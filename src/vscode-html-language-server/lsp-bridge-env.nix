@@ -17,7 +17,7 @@ in pkgs.mkShell {
     # ensure that the build will not be affected by changes in the system time
     unset SOURCE_DATE_EPOCH
 
-    pip install epc orjson paramiko rapidfuzz sexpdata==1.0.0 six
+    pip install -r requirements.txt
   '';
 
   postShellHook = ''

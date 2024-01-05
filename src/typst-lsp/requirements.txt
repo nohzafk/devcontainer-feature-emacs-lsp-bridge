@@ -1,0 +1,7 @@
+epc==0.0.5
+orjson==3.9.10
+sexpdata==1.0.0
+setuptools==69.0.2
+rapidfuzz==3.6.1
+paramiko==3.4.0
+six==1.16.0

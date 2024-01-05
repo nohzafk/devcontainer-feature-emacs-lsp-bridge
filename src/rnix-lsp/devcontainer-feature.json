@@ -1,6 +1,6 @@
 {
     "id": "rnix-lsp",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "name": "emacs lsp-bridge rnix-lsp language server",
     "description": "emacs lsp-bridge rnix-lsp language server environment installed by Nix Pacakge Manager",
     "options": {

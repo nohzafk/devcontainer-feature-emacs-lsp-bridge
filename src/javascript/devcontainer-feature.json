@@ -1,6 +1,6 @@
 {
     "id": "javascript",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "name": "emacs lsp-bridge javascript language server",
     "description": "emacs lsp-bridge javascript language server environment installed by Nix Pacakge Manager",
     "options": {
