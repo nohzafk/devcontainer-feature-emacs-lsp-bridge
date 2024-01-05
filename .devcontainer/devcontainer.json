@@ -13,7 +13,10 @@
                 ]
             },
             "extensions": [
-                "mads-hartmann.bash-ide-vscode"
+                "mads-hartmann.bash-ide-vscode",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.black-formatter"
             ]
         }
     },
@@ -22,5 +25,5 @@
         "ghcr.io/devcontainers/features/python:1": {}
     },
     "remoteUser": "node",
-    "updateContentCommand": "npm install -g @devcontainers/cli; pipx install cookiecutter"
+    "updateContentCommand": "bash .devcontainer/install-deps.sh"
 }
