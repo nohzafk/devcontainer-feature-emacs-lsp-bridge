@@ -135,6 +135,11 @@
         "langserver_binary": "jedi-language-server"
     },
     {
+        "langserver": "jedi_ruff",
+        "packages": "python311Packages.jedi-language-server,ruff-lsp",
+        "langserver_binary": "jedi-language-server,ruff-lsp"
+    },
+    {
         "langserver": "julials",
         "packages": "",
         "langserver_binary": "julia.exe"
@@ -201,8 +206,18 @@
     },
     {
         "langserver": "pyright-background-analysis",
-        "packages": "",
+        "packages": "nodePackages.pyright",
         "langserver_binary": "pyright-langserver"
+    },
+    {
+        "langserver": "pyright-background-analysis_ruff",
+        "packages": "nodePackages.pyright,ruff-lsp",
+        "langserver_binary": "pyright-langserver,ruff-lsp"
+    },
+    {
+        "langserver": "pyright_ruff",
+        "packages": "nodePackages.pyright,ruff-lsp",
+        "langserver_binary": "pyright-langserver,ruff-lsp"
     },
     {
         "langserver": "python-ms",
@@ -268,6 +283,11 @@
         "langserver": "typescript",
         "packages": "nodePackages.typescript-language-server",
         "langserver_binary": "typescript-language-server"
+    },
+    {
+        "langserver": "typescript_eslint",
+        "packages": "nodePackages.typescript-language-server,vscode-langservers-extracted",
+        "langserver_binary": "typescript-language-server,vscode-eslint-language-server"
     },
     {
         "langserver": "typescriptreact",

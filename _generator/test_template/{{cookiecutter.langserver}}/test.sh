@@ -26,7 +26,17 @@ cat /etc/os-release
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
 check "nix-env" type nix-env
-check "{{cookiecutter.langserver_binary}} installed" type {{cookiecutter.langserver_binary}}
+
+langserver_binary="{{cookiecutter.langserver_binary}}"
+
+IFS=','
+for item in $langserver_binary; do
+    # Trim leading and trailing whitespace
+    item=$(echo $item | xargs)
+    # Perform the check
+    check "$item installed" type $item
+done
+
 check "lsp_bridge can be started successfully" cat /tmp/lsp-bridge.log | grep successfully
 
 # Report result

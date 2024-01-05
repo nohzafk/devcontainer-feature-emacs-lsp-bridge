@@ -26,7 +26,17 @@ cat /etc/os-release
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
 check "nix-env" type nix-env
-check "vscode-json-language-server installed" type vscode-json-language-server
+
+langserver_binary="vscode-json-language-server"
+
+IFS=','
+for item in $langserver_binary; do
+    # Trim leading and trailing whitespace
+    item=$(echo $item | xargs)
+    # Perform the check
+    check "$item installed" type $item
+done
+
 check "lsp_bridge can be started successfully" cat /tmp/lsp-bridge.log | grep successfully
 
 # Report result
