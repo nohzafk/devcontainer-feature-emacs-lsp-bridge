@@ -47,5 +47,5 @@
         "PATH": "/nix/var/nix/profiles/default/bin:/nix/var/nix/profiles/default/sbin:${PATH}"
     },
     "entrypoint": "/usr/local/share/nix-entrypoint.sh",
-    "updateContentCommand": "bash /tmp/lsp-bridge-start.sh"
+    "postStartCommand": "nohup bash /tmp/lsp-bridge-start.sh"
 }
