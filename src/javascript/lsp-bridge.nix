@@ -6,8 +6,8 @@ pkgs.stdenv.mkDerivation {
   src = pkgs.fetchFromGitHub {
     owner = "nohzafk";
     repo = "lsp-bridge";
-    rev = "feature/user-ssh-private-key";
-    sha256 = "sha256-ndM+tbTFlhJtKrzUo0Y/obsXesX5odxbgMRi4bJNRAg=";
+    rev = "feature/restart-and-reconnect";
+    sha256 = "sha256-2zwkTDLYKx04RyrtFIYFl+B9gl6H3yuZ2uKpdaVoIg4=";
   };
   buildInputs = [ pkgs.python311Packages.python ];
   dontConfigure = true;
