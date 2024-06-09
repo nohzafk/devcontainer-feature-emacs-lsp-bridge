@@ -1,6 +1,6 @@
 {
     "id": "pyright_ruff",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "name": "emacs lsp-bridge pyright_ruff language server",
     "description": "emacs lsp-bridge pyright_ruff language server environment installed by Nix Pacakge Manager",
     "options": {

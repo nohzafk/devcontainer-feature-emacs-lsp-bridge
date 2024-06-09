@@ -15,6 +15,11 @@
         "langserver_binary": "bash-language-server"
     },
     {
+        "langserver": "beancount-language-server",
+        "packages": "",
+        "langserver_binary": "beancount-language-server"
+    },
+    {
         "langserver": "ccls",
         "packages": "",
         "langserver_binary": "ccls"
@@ -33,6 +38,11 @@
         "langserver": "cmake-language-server",
         "packages": "",
         "langserver_binary": "cmake-language-server"
+    },
+    {
+        "langserver": "csharp-ls",
+        "packages": "",
+        "langserver_binary": "$HOME/.dotnet/tools/csharp-ls"
     },
     {
         "langserver": "dart-analysis-server",
@@ -62,7 +72,7 @@
     {
         "langserver": "elixirLS",
         "packages": "",
-        "langserver_binary": "language_server.sh"
+        "langserver_binary": "language_server.bat"
     },
     {
         "langserver": "elm-language-server",
@@ -125,9 +135,14 @@
         "langserver_binary": "typescript-language-server"
     },
     {
+        "langserver": "javascriptreact",
+        "packages": "",
+        "langserver_binary": "typescript-language-server"
+    },
+    {
         "langserver": "jdtls",
         "packages": "",
-        "langserver_binary": "jdtls"
+        "langserver_binary": "python"
     },
     {
         "langserver": "jedi",
@@ -142,7 +157,7 @@
     {
         "langserver": "julials",
         "packages": "",
-        "langserver_binary": "julia.exe"
+        "langserver_binary": "julia"
     },
     {
         "langserver": "kotlin-language-server",
@@ -160,14 +175,29 @@
         "langserver_binary": "metals"
     },
     {
+        "langserver": "mojo-lsp-server",
+        "packages": "",
+        "langserver_binary": "mojo-lsp-server"
+    },
+    {
         "langserver": "move-analyzer",
         "packages": "",
         "langserver_binary": "move-analyzer"
     },
     {
+        "langserver": "nextls",
+        "packages": "",
+        "langserver_binary": "nextls"
+    },
+    {
         "langserver": "nil",
         "packages": "nil",
         "langserver_binary": "nil"
+    },
+    {
+        "langserver": "nixd",
+        "packages": "",
+        "langserver_binary": "nixd"
     },
     {
         "langserver": "nls",
@@ -182,7 +212,7 @@
     {
         "langserver": "omnisharp-dotnet",
         "packages": "",
-        "langserver_binary": "$HOME/.emacs.d/.cache/omnisharp/OmniSharp"
+        "langserver_binary": "%USER_EMACS_DIRECTORY%\\.cache\\omnisharp\\OmniSharp.exe"
     },
     {
         "langserver": "omnisharp-mono",
@@ -230,6 +260,11 @@
         "langserver_binary": "qmlls"
     },
     {
+        "langserver": "racket-langserver",
+        "packages": "",
+        "langserver_binary": "racket"
+    },
+    {
         "langserver": "rlanguageserver",
         "packages": "",
         "langserver_binary": "R"
@@ -260,6 +295,11 @@
         "langserver_binary": "solargraph"
     },
     {
+        "langserver": "solidity",
+        "packages": "",
+        "langserver_binary": "nomicfoundation-solidity-language-server"
+    },
+    {
         "langserver": "sourcekit-lsp",
         "packages": "",
         "langserver_binary": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp"
@@ -273,6 +313,11 @@
         "langserver": "svelteserver",
         "packages": "",
         "langserver_binary": "svelteserver"
+    },
+    {
+        "langserver": "tailwindcss",
+        "packages": "",
+        "langserver_binary": "tailwindcss-language-server"
     },
     {
         "langserver": "texlab",
@@ -300,6 +345,11 @@
         "langserver_binary": "typst-lsp"
     },
     {
+        "langserver": "vale-ls",
+        "packages": "",
+        "langserver_binary": "vale-ls"
+    },
+    {
         "langserver": "verible",
         "packages": "",
         "langserver_binary": "verible-verilog-ls"
@@ -312,7 +362,7 @@
     {
         "langserver": "volar",
         "packages": "",
-        "langserver_binary": "vue-language-server"
+        "langserver_binary": "vue-language-server.cmd"
     },
     {
         "langserver": "vscode-css-language-server",
