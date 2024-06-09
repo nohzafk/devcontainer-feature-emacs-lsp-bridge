@@ -21,8 +21,7 @@ jobs:
           - pyright
           - pyright_ruff
           - pyright-background-analysis
-          - pyright-background-analysis_ruff
-          - rnix-lsp          
+          - pyright-background-analysis_ruff          
           - ruff
           - typescript
           - typescript_eslint
