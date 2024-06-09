@@ -2,6 +2,8 @@
 
 This repository provides automation to generate devcontainer features for every language server supported by [lsp-bridge](https://github.com/manateelazycat/lsp-bridge). It uses [nix packages](https://search.nixos.org/packages) to install the language server and lsp-bridge environment inside the container.
 
+![Emacs lsp-bridge showing auto-completion menu when opeing a file in container](https://github.com/nohzafk/devcontainer-feature-emacs-lsp-bridge/blob/main/Screenshot.jpeg?raw=true)
+
 # Available Features
 You can find all available features in the [Packages](https://github.com/nohzafk?tab=packages&repo_name=devcontainer-feature-emacs-lsp-bridge) section.
 
