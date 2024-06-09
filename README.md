@@ -1,188 +1,120 @@
-# Dev Container Features: Self Authoring Template
+# Dev Container Features: emacs-lsp-bridge
 
-> This repo provides a starting point and example for creating your own custom [dev container Features](https://containers.dev/implementors/features/), hosted for free on GitHub Container Registry.  The example in this repository follows the [dev container Feature distribution specification](https://containers.dev/implementors/features-distribution/).  
->
-> To provide feedback to the specification, please leave a comment [on spec issue #70](https://github.com/devcontainers/spec/issues/70). For more broad feedback regarding dev container Features, please see [spec issue #61](https://github.com/devcontainers/spec/issues/61).
+This repository provides automation to generate devcontainer features for every language server supported by [lsp-bridge](https://github.com/manateelazycat/lsp-bridge). It uses [nix packages](https://search.nixos.org/packages) to install the language server and lsp-bridge environment inside the container.
 
-## Example Contents
+# Available Features
+You can find all available features in the [Packages](https://github.com/nohzafk?tab=packages&repo_name=devcontainer-feature-emacs-lsp-bridge) section.
 
-This repository contains a _collection_ of two Features - `hello` and `color`. These Features serve as simple feature implementations.  Each sub-section below shows a sample `devcontainer.json` alongside example usage of the Feature.
+# Connect lsp-bridge to Container
+Here is how you can set up [lsp-bridge](https://github.com/manateelazycat/lsp-bridge) to connect to the container and open a file in Emacs to start the auto-completion.
 
-### `hello`
+## Setup devcontainer
+Add a `.devcontainer/devcontainer.json` to your project. Below is an example configuration:
 
-Running `hello` inside the built container will print the greeting provided to it via its `greeting` option.
-
-```jsonc
+```json
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-    "features": {
-        "ghcr.io/devcontainers/feature-starter/hello:1": {
-            "greeting": "Hello"
-        }
-    }
+	"name": "Node.js & TypeScript",
+    // Your base image
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
+    // Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/typescript_eslint:latest": {}
+	},
+	"forwardPorts": [
+        9997,
+        9998,
+        9999
+    ],
+    // More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "root"
 }
 ```
 
-```bash
-$ hello
+In this configuration, you need to add the `features`, `forwardPorts`, and `remoteUser` fields.
 
-Hello, user.
+
+### Features
+Select the language server you want to use in the `features` section. For example:
+
+```json
+"ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/typescript_eslint:latest": {}
 ```
 
-### `color`
+You can find all available features in the [Packages](https://github.com/nohzafk?tab=packages&repo_name=devcontainer-feature-emacs-lsp-bridge) section. 
 
-Running `color` inside the built container will print your favorite color to standard out.
+Use the file name of the language server definition file in lsp-bridge as the feature name. 
 
-```jsonc
+```shell
+❯ cd lsp-bridge
+# ls langserver/
+❯ ls multiserver/ 
+ css_emmet.json          jedi_ruff.json                          python-ms_ruff.json
+ css_tailwindcss.json    pylsp_ruff.json                         qmlls_javascript.json
+ html_emmet.json         pyright-background-analysis_ruff.json   typescript_eslint.json
+ html_tailwindcss.json   pyright_ruff.json                       volar_emmet.json
+```
+
+For example, to use the `pyright_ruff` language server, add this line to the `features` section in the `devcontainer.json`:
+
+```json
+"ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/pyright_ruff:latest": {}
+```
+
+### Forward Ports
+This is needed to communicate with the lsp-bridge server inside the container. Ensure you list the ports `9997` `9998` `9999` in the `forwardPorts` section.
+
+### Remote User
+Identify the **default user** used by your base image, such as `root` or `vscode`. 
+
+This user is used to spawn the `lsp-bridge` server process, and you need to use it when opening a file in Emacs. For more information, see the [remoteUser documentation](https://containers.dev/implementors/json_reference/#remoteUser).
+
+## Start the devcontainer
+
+Use [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) with `VSCode` to start the devcontainer
+
+By default devcontainer mount the current project folder under `/workspaces/` inside the container, [more details](https://code.visualstudio.com/remote/advancedcontainers/change-default-source-mount).
+
+
+### Without VSCode
+If you don't want to use `VSCode`, you can use the [devcontainer CLI](https://github.com/devcontainers/cli) command line tool and [devcontainer cli port forwarder](https://github.com/nohzafk/devcontainer-cli-port-forwarder) to start the devcontaienr on Terminal.
+
+the port forwarder is needed because forwardPorts is not implemented by `devcontainer CLI`, see [#issue 22](https://github.com/devcontainers/cli/issues/22#issuecomment-2053940737)
+
+
+## Use Emacs to open file in devcontainer
+
+use `find-file` and input the file name prefix **/docker:user@**, press `TAB`, and Emacs will list out the container name for use
+
+```shell
+C-x C-f /docker:user@container:/workspaces/project/file
+
+where
+  user           is the user that you want to use inside the container (optional)
+  container      is the id or name of the container
+```
+
+
+check [docker-tramp](https://github.com/emacs-pe/docker-tramp.el) for more details.
+
+
+# Nix Package Definition
+The definition of which nix package to use for the language server is specified in `_generator/langserver.json`. Here is an example:
+
+```json
 {
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-    "features": {
-        "ghcr.io/devcontainers/feature-starter/color:1": {
-            "favorite": "green"
-        }
-    }
+    "langserver": "typescript",
+    "packages": "nodePackages.typescript-language-server",
+    "langserver_binary": "typescript-language-server"
 }
 ```
 
-```bash
-$ color
+The `packages` field for some definitions is left empty. Contributions to fill in the missing packages are welcome.
 
-my favorite color is green
-```
+# Contributing
 
-## Repo and Feature Structure
+use `_generator/run_generator.sh` to gnerate the `langserver.json`
 
-Similar to the [`devcontainers/features`](https://github.com/devcontainers/features) repo, this repository has a `src` folder.  Each Feature has its own sub-folder, containing at least a `devcontainer-feature.json` and an entrypoint script `install.sh`. 
+use `_generator/test.sh <feature_name>` to test the feature
 
-```
-├── src
-│   ├── hello
-│   │   ├── devcontainer-feature.json
-│   │   └── install.sh
-│   ├── color
-│   │   ├── devcontainer-feature.json
-│   │   └── install.sh
-|   ├── ...
-│   │   ├── devcontainer-feature.json
-│   │   └── install.sh
-...
-```
-
-An [implementing tool](https://containers.dev/supporting#tools) will composite [the documented dev container properties](https://containers.dev/implementors/features/#devcontainer-feature-json-properties) from the feature's `devcontainer-feature.json` file, and execute in the `install.sh` entrypoint script in the container during build time.  Implementing tools are also free to process attributes under the `customizations` property as desired.
-
-### Options
-
-All available options for a Feature should be declared in the `devcontainer-feature.json`.  The syntax for the `options` property can be found in the [devcontainer Feature json properties reference](https://containers.dev/implementors/features/#devcontainer-feature-json-properties).
-
-For example, the `color` feature provides an enum of three possible options (`red`, `gold`, `green`).  If no option is provided in a user's `devcontainer.json`, the value is set to "red".
-
-```jsonc
-{
-    // ...
-    "options": {
-        "favorite": {
-            "type": "string",
-            "enum": [
-                "red",
-                "gold",
-                "green"
-            ],
-            "default": "red",
-            "description": "Choose your favorite color."
-        }
-    }
-}
-```
-
-Options are exported as Feature-scoped environment variables.  The option name is captialized and sanitized according to [option resolution](https://containers.dev/implementors/features/#option-resolution).
-
-```bash
-#!/bin/bash
-
-echo "Activating feature 'color'"
-echo "The provided favorite color is: ${FAVORITE}"
-
-...
-```
-
-## Distributing Features
-
-### Versioning
-
-Features are individually versioned by the `version` attribute in a Feature's `devcontainer-feature.json`.  Features are versioned according to the semver specification. More details can be found in [the dev container Feature specification](https://containers.dev/implementors/features/#versioning).
-
-### Publishing
-
-> NOTE: The Distribution spec can be [found here](https://containers.dev/implementors/features-distribution/).  
->
-> While any registry [implementing the OCI Distribution spec](https://github.com/opencontainers/distribution-spec) can be used, this template will leverage GHCR (GitHub Container Registry) as the backing registry.
-
-Features are meant to be easily sharable units of dev container configuration and installation code.  
-
-This repo contains a **GitHub Action** [workflow](.github/workflows/release.yaml) that will publish each Feature to GHCR. 
-
-*Allow GitHub Actions to create and approve pull requests* should be enabled in the repository's `Settings > Actions > General > Workflow permissions` for auto generation of `src/<feature>/README.md` per Feature (which merges any existing `src/<feature>/NOTES.md`).
-
-By default, each Feature will be prefixed with the `<owner/<repo>` namespace.  For example, the two Features in this repository can be referenced in a `devcontainer.json` with:
-
-```
-ghcr.io/devcontainers/feature-starter/color:1
-ghcr.io/devcontainers/feature-starter/hello:1
-```
-
-The provided GitHub Action will also publish a third "metadata" package with just the namespace, eg: `ghcr.io/devcontainers/feature-starter`.  This contains information useful for tools aiding in Feature discovery.
-
-'`devcontainers/feature-starter`' is known as the feature collection namespace.
-
-### Marking Feature Public
-
-Note that by default, GHCR packages are marked as `private`.  To stay within the free tier, Features need to be marked as `public`.
-
-This can be done by navigating to the Feature's "package settings" page in GHCR, and setting the visibility to 'public`.  The URL may look something like:
-
-```
-https://github.com/users/<owner>/packages/container/<repo>%2F<featureName>/settings
-```
-
-<img width="669" alt="image" src="https://user-images.githubusercontent.com/23246594/185244705-232cf86a-bd05-43cb-9c25-07b45b3f4b04.png">
-
-### Adding Features to the Index
-
-If you'd like your Features to appear in our [public index](https://containers.dev/features) so that other community members can find them, you can do the following:
-
-* Go to [github.com/devcontainers/devcontainers.github.io](https://github.com/devcontainers/devcontainers.github.io)
-     * This is the GitHub repo backing the [containers.dev](https://containers.dev/) spec site
-* Open a PR to modify the [collection-index.yml](https://github.com/devcontainers/devcontainers.github.io/blob/gh-pages/_data/collection-index.yml) file
-
-This index is from where [supporting tools](https://containers.dev/supporting) like [VS Code Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) and [GitHub Codespaces](https://github.com/features/codespaces) surface Features for their dev container creation UI.
-
-#### Using private Features in Codespaces
-
-For any Features hosted in GHCR that are kept private, the `GITHUB_TOKEN` access token in your environment will need to have `package:read` and `contents:read` for the associated repository.
-
-Many implementing tools use a broadly scoped access token and will work automatically.  GitHub Codespaces uses repo-scoped tokens, and therefore you'll need to add the permissions in `devcontainer.json`
-
-An example `devcontainer.json` can be found below.
-
-```jsonc
-{
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-    "features": {
-     "ghcr.io/my-org/private-features/hello:1": {
-            "greeting": "Hello"
-        }
-    },
-    "customizations": {
-        "codespaces": {
-            "repositories": {
-                "my-org/private-features": {
-                    "permissions": {
-                        "packages": "read",
-                        "contents": "read"
-                    }
-                }
-            }
-        }
-    }
-}
-```
