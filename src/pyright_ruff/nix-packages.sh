@@ -1,1 +1,1 @@
-LANGSERVER_PACKAGES="nodePackages.pyright,ruff-lsp"
+LANGSERVER_PACKAGES="pyright,ruff-lsp"

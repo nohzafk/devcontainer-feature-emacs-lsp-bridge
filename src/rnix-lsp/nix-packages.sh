@@ -1,1 +1,0 @@
-LANGSERVER_PACKAGES="rnix-lsp"

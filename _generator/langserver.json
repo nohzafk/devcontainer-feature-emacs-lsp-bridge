@@ -231,22 +231,22 @@
     },
     {
         "langserver": "pyright",
-        "packages": "nodePackages.pyright",
+        "packages": "pyright",
         "langserver_binary": "pyright-langserver"
     },
     {
         "langserver": "pyright-background-analysis",
-        "packages": "nodePackages.pyright",
+        "packages": "pyright",
         "langserver_binary": "pyright-langserver"
     },
     {
         "langserver": "pyright-background-analysis_ruff",
-        "packages": "nodePackages.pyright,ruff-lsp",
+        "packages": "pyright,ruff-lsp",
         "langserver_binary": "pyright-langserver,ruff-lsp"
     },
     {
         "langserver": "pyright_ruff",
-        "packages": "nodePackages.pyright,ruff-lsp",
+        "packages": "pyright,ruff-lsp",
         "langserver_binary": "pyright-langserver,ruff-lsp"
     },
     {
@@ -271,7 +271,7 @@
     },
     {
         "langserver": "rnix-lsp",
-        "packages": "rnix-lsp",
+        "packages": "",
         "langserver_binary": "rnix-lsp"
     },
     {
