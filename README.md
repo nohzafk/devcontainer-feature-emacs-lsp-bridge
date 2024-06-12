@@ -44,14 +44,14 @@ Select the language server you want to use in the `features` section. For exampl
 "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/typescript_eslint:latest": {}
 ```
 
-You can find all available features in the [Packages](https://github.com/nohzafk?tab=packages&repo_name=devcontainer-feature-emacs-lsp-bridge) section. 
+You can find all available features in the [Packages](https://github.com/nohzafk?tab=packages&repo_name=devcontainer-feature-emacs-lsp-bridge) section.
 
-Use the file name of the language server definition file in lsp-bridge as the feature name. 
+Use the file name of the language server definition file in lsp-bridge as the feature name.
 
 ```shell
 ❯ cd lsp-bridge
 # ls langserver/
-❯ ls multiserver/ 
+❯ ls multiserver/
  css_emmet.json          jedi_ruff.json                          python-ms_ruff.json
  css_tailwindcss.json    pylsp_ruff.json                         qmlls_javascript.json
  html_emmet.json         pyright-background-analysis_ruff.json   typescript_eslint.json
@@ -61,14 +61,14 @@ Use the file name of the language server definition file in lsp-bridge as the fe
 For example, to use the `pyright_ruff` language server, add this line to the `features` section in the `devcontainer.json`:
 
 ```json
-"ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/pyright_ruff:latest": {}
+"ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/pyright-background-analysis_ruff:latest": {}
 ```
 
 ### Forward Ports
 This is needed to communicate with the lsp-bridge server inside the container. Ensure you list the ports `9997` `9998` `9999` in the `forwardPorts` section.
 
 ### Remote User
-Identify the **default user** used by your base image, such as `root` or `vscode`. 
+Identify the **default user** used by your base image, such as `root` or `vscode`.
 
 This user is used to spawn the `lsp-bridge` server process, and you need to use it when opening a file in Emacs. For more information, see the [remoteUser documentation](https://containers.dev/implementors/json_reference/#remoteUser).
 
@@ -119,4 +119,3 @@ The `packages` field for some definitions is left empty. Contributions to fill i
 use `_generator/run_generator.sh` to gnerate the `langserver.json`
 
 use `_generator/test.sh <feature_name>` to test the feature
-
