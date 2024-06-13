@@ -58,7 +58,7 @@ Use the file name of the language server definition file in lsp-bridge as the fe
  html_tailwindcss.json   pyright_ruff.json                       volar_emmet.json
 ```
 
-For example, to use the `pyright_ruff` language server, add this line to the `features` section in the `devcontainer.json`:
+For example, to use the `pyright-background-analysis_ruff` language server, add this line to the `features` section in the `devcontainer.json`:
 
 ```json
 "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/pyright-background-analysis_ruff:latest": {}
