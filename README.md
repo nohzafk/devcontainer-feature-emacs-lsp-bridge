@@ -93,7 +93,7 @@ use `find-file` and input the file name prefix **/docker:user@**, press `TAB`, a
 C-x C-f /docker:user@container:/workspaces/project/file
 
 where
-  user           is the user that you want to use inside the container (optional)
+  user           is the user that you want to use inside the container, use the same user as remoteUser in devcontainer.json
   container      is the id or name of the container
 ```
 
