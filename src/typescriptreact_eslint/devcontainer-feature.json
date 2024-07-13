@@ -1,8 +1,8 @@
 {
-  "id": "nil",
+  "id": "typescriptreact_eslint",
   "version": "0.4.3",
-  "name": "emacs lsp-bridge nil language server",
-  "description": "emacs lsp-bridge nil language server environment installed by Nix Pacakge Manager",
+  "name": "emacs lsp-bridge typescriptreact_eslint language server",
+  "description": "emacs lsp-bridge typescriptreact_eslint language server environment installed by Nix Pacakge Manager",
   "options": {
     "version": {
       "type": "string",

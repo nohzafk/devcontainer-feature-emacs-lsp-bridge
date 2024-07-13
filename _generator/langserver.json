@@ -1,5 +1,10 @@
 [
     {
+        "langserver": "ada-language-server",
+        "packages": "",
+        "langserver_binary": "ada_language_server"
+    },
+    {
         "langserver": "ansible-language-server",
         "packages": "",
         "langserver_binary": "ansible-language-server"
@@ -8,6 +13,11 @@
         "langserver": "astro-ls",
         "packages": "",
         "langserver_binary": "astro-ls"
+    },
+    {
+        "langserver": "basedpyright",
+        "packages": "",
+        "langserver_binary": "basedpyright-langserver"
     },
     {
         "langserver": "bash-language-server",
@@ -105,6 +115,16 @@
         "langserver_binary": "fsautocomplete"
     },
     {
+        "langserver": "futhark-lsp",
+        "packages": "",
+        "langserver_binary": "futhark"
+    },
+    {
+        "langserver": "gleam",
+        "packages": "",
+        "langserver_binary": "gleam"
+    },
+    {
         "langserver": "gopls",
         "packages": "",
         "langserver_binary": "gopls"
@@ -170,9 +190,24 @@
         "langserver_binary": "start_lexical.sh"
     },
     {
+        "langserver": "lua-lsp",
+        "packages": "",
+        "langserver_binary": "lua-lsp"
+    },
+    {
+        "langserver": "marksman",
+        "packages": "",
+        "langserver_binary": "marksman"
+    },
+    {
         "langserver": "metals",
         "packages": "",
         "langserver_binary": "metals"
+    },
+    {
+        "langserver": "mint-ls",
+        "packages": "",
+        "langserver_binary": "mint"
     },
     {
         "langserver": "mojo-lsp-server",
@@ -220,9 +255,19 @@
         "langserver_binary": "mono"
     },
     {
+        "langserver": "perl-language-server",
+        "packages": "",
+        "langserver_binary": "perl"
+    },
+    {
         "langserver": "phpactor",
         "packages": "",
         "langserver_binary": "phpactor"
+    },
+    {
+        "langserver": "purescript-language-server",
+        "packages": "",
+        "langserver_binary": "purescript-language-server"
     },
     {
         "langserver": "pylsp",
@@ -338,6 +383,11 @@
         "langserver": "typescriptreact",
         "packages": "nodePackages.typescript-language-server",
         "langserver_binary": "typescript-language-server"
+    },
+    {
+        "langserver": "typescriptreact_eslint",
+        "packages": "nodePackages.typescript-language-server,vscode-langservers-extracted",
+        "langserver_binary": "typescript-language-server,vscode-eslint-language-server"
     },
     {
         "langserver": "typst-lsp",

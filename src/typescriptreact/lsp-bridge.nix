@@ -2,12 +2,12 @@
 
 pkgs.stdenv.mkDerivation {
   pname = "lsp-bridge-src";
-  version = "20240609-master";
+  version = "20240717-master";
   src = pkgs.fetchFromGitHub {
-    owner = "nohzafk";
+    owner = "manateelazycat";
     repo = "lsp-bridge";
-    rev = "feature/run-in-container";
-    sha256 = "sha256-Y1gc2aPDTTPLPjPpyCfvA7jaeww/v6dgZGscAKjW3qw=";
+    rev = "f47cf14";
+    sha256 = "sha256-Rg3oA+wYdhsT2q4QQ/0aCGdluoaZ9ZY9JAeXRV2M34s=";
   };
   buildInputs = [ pkgs.python311Packages.python ];
   dontConfigure = true;
