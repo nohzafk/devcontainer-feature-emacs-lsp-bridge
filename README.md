@@ -101,7 +101,85 @@ where
 check [docker-tramp](https://github.com/emacs-pe/docker-tramp.el) for more details.
 
 
-# Nix Package Definition
+# Supported LSP
+- ansible-language-server
+- basedpyright
+- basedpyright_ruff
+- bash-language-server
+- beancount-language-server
+- ccls
+- clojure-lsp
+- cmake-language-server
+- csharp-ls
+- css_emmet
+- css_tailwindcss
+- dart-analysis-server
+- deno
+- docker-langserver
+- elixirLS
+- elm-language-server
+- emmet-ls
+- erlang-ls
+- fortls
+- fsautocomplete
+- futhark-lsp
+- gleam
+- glsl-language-server
+- gopls
+- hls
+- html_emmet
+- html_tailwindcss
+- intelephense
+- javascript
+- javascriptreact
+- jdtls
+- jedi
+- jedi_ruff
+- jsonnet-language-server
+- kotlin-language-server
+- lua-lsp
+- marksman
+- metals
+- mint-ls
+- nil
+- nixd
+- nls
+- perl-language-server
+- phpactor
+- purescript-language-server
+- pylsp
+- pylsp_ruff
+- pyright
+- pyright-background-analysis
+- pyright-background-analysis_ruff
+- pyright_ruff
+- rlanguageserver
+- ruff
+- rust-analyzer
+- serve-d
+- solargraph
+- sumneko
+- tailwindcss
+- terraform-ls
+- texlab
+- typescript
+- typescript_eslint
+- typescriptreact
+- typescriptreact_eslint
+- typst-lsp
+- vale-ls
+- verible
+- vscode-css-language-server
+- vscode-eslint-language-server
+- vscode-html-language-server
+- vscode-json-language-server
+- yaml-language-server
+- zls
+
+# Contributing
+
+Nix Package Definition
+
 The definition of which nix package to use for the language server is specified in `_generator/langserver.json`. Here is an example:
 
 ```json
@@ -113,8 +191,6 @@ The definition of which nix package to use for the language server is specified 
 ```
 
 The `packages` field for some definitions is left empty. Contributions to fill in the missing packages are welcome.
-
-# Contributing
 
 use `_generator/run_generator.sh` to gnerate the `langserver.json`
 

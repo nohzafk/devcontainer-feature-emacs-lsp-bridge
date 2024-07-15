@@ -1,0 +1,48 @@
+{
+  "id": "phpactor",
+  "version": "0.4.4",
+  "name": "emacs lsp-bridge phpactor language server",
+  "description": "emacs lsp-bridge phpactor language server environment installed by Nix Pacakge Manager",
+  "options": {
+    "version": {
+      "type": "string",
+      "proposals": ["latest", "2.11"],
+      "default": "latest",
+      "description": "Version of Nix to install."
+    },
+    "multiUser": {
+      "type": "boolean",
+      "default": true,
+      "description": "Perform a multi-user install (instead of single user)"
+    },
+    "packages": {
+      "type": "string",
+      "default": "",
+      "description": "Optinal additional comma separated list of Nix packages to install in profile besides default language server pacakge."
+    },
+    "useAttrPath": {
+      "type": "boolean",
+      "default": true,
+      "description": "Enable this option to use exact attribute path of the package in the Nixpkgs repository, aligning with the nix-env -iA command."
+    },
+    "flakeUri": {
+      "type": "string",
+      "default": "",
+      "description": "Optional URI to a Nix Flake to install in profile."
+    },
+    "extraNixConfig": {
+      "type": "string",
+      "default": "",
+      "description": "Optional comma separated list of extra lines to add to /etc/nix/nix.conf."
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils",
+    "ghcr.io/devcontainers/features/sshd"
+  ],
+  "containerEnv": {
+    "PATH": "/nix/var/nix/profiles/default/bin:/nix/var/nix/profiles/default/sbin:${PATH}"
+  },
+  "entrypoint": "/usr/local/share/nix-entrypoint.sh",
+  "postStartCommand": "nohup bash /tmp/lsp-bridge-start.sh"
+}

@@ -1,0 +1,1 @@
+LANGSERVER_PACKAGES="vale-ls"

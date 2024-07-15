@@ -1,457 +1,512 @@
 [
-    {
-        "langserver": "ada-language-server",
-        "packages": "",
-        "langserver_binary": "ada_language_server"
-    },
-    {
-        "langserver": "ansible-language-server",
-        "packages": "",
-        "langserver_binary": "ansible-language-server"
-    },
-    {
-        "langserver": "astro-ls",
-        "packages": "",
-        "langserver_binary": "astro-ls"
-    },
-    {
-        "langserver": "basedpyright",
-        "packages": "",
-        "langserver_binary": "basedpyright-langserver"
-    },
-    {
-        "langserver": "bash-language-server",
-        "packages": "",
-        "langserver_binary": "bash-language-server"
-    },
-    {
-        "langserver": "beancount-language-server",
-        "packages": "",
-        "langserver_binary": "beancount-language-server"
-    },
-    {
-        "langserver": "ccls",
-        "packages": "",
-        "langserver_binary": "ccls"
-    },
-    {
-        "langserver": "clangd",
-        "packages": "",
-        "langserver_binary": "clangd"
-    },
-    {
-        "langserver": "clojure-lsp",
-        "packages": "",
-        "langserver_binary": "clojure-lsp"
-    },
-    {
-        "langserver": "cmake-language-server",
-        "packages": "",
-        "langserver_binary": "cmake-language-server"
-    },
-    {
-        "langserver": "csharp-ls",
-        "packages": "",
-        "langserver_binary": "$HOME/.dotnet/tools/csharp-ls"
-    },
-    {
-        "langserver": "dart-analysis-server",
-        "packages": "",
-        "langserver_binary": "dart"
-    },
-    {
-        "langserver": "deno",
-        "packages": "",
-        "langserver_binary": "deno"
-    },
-    {
-        "langserver": "digestif",
-        "packages": "",
-        "langserver_binary": "digestif"
-    },
-    {
-        "langserver": "docker-langserver",
-        "packages": "dockerfile-language-server-nodejs",
-        "langserver_binary": "docker-langserver"
-    },
-    {
-        "langserver": "ds-pinyin",
-        "packages": "",
-        "langserver_binary": "$HOME/.cargo/bin/ds-pinyin-lsp"
-    },
-    {
-        "langserver": "elixirLS",
-        "packages": "",
-        "langserver_binary": "language_server.bat"
-    },
-    {
-        "langserver": "elm-language-server",
-        "packages": "",
-        "langserver_binary": "elm-language-server"
-    },
-    {
-        "langserver": "emmet-ls",
-        "packages": "",
-        "langserver_binary": "emmet-ls"
-    },
-    {
-        "langserver": "emmet-ls-css",
-        "packages": "",
-        "langserver_binary": "emmet-ls"
-    },
-    {
-        "langserver": "erlang-ls",
-        "packages": "",
-        "langserver_binary": "erlang_ls"
-    },
-    {
-        "langserver": "fortls",
-        "packages": "",
-        "langserver_binary": "fortls"
-    },
-    {
-        "langserver": "fsautocomplete",
-        "packages": "",
-        "langserver_binary": "fsautocomplete"
-    },
-    {
-        "langserver": "futhark-lsp",
-        "packages": "",
-        "langserver_binary": "futhark"
-    },
-    {
-        "langserver": "gleam",
-        "packages": "",
-        "langserver_binary": "gleam"
-    },
-    {
-        "langserver": "gopls",
-        "packages": "",
-        "langserver_binary": "gopls"
-    },
-    {
-        "langserver": "graphql-lsp",
-        "packages": "",
-        "langserver_binary": "graphql-lsp"
-    },
-    {
-        "langserver": "groovy-language-server",
-        "packages": "",
-        "langserver_binary": "groovy-language-server"
-    },
-    {
-        "langserver": "hls",
-        "packages": "",
-        "langserver_binary": "haskell-language-server-wrapper"
-    },
-    {
-        "langserver": "intelephense",
-        "packages": "",
-        "langserver_binary": "intelephense"
-    },
-    {
-        "langserver": "javascript",
-        "packages": "nodePackages.typescript-language-server",
-        "langserver_binary": "typescript-language-server"
-    },
-    {
-        "langserver": "javascriptreact",
-        "packages": "",
-        "langserver_binary": "typescript-language-server"
-    },
-    {
-        "langserver": "jdtls",
-        "packages": "",
-        "langserver_binary": "python"
-    },
-    {
-        "langserver": "jedi",
-        "packages": "python311Packages.jedi-language-server",
-        "langserver_binary": "jedi-language-server"
-    },
-    {
-        "langserver": "jedi_ruff",
-        "packages": "python311Packages.jedi-language-server,ruff-lsp",
-        "langserver_binary": "jedi-language-server,ruff-lsp"
-    },
-    {
-        "langserver": "julials",
-        "packages": "",
-        "langserver_binary": "julia"
-    },
-    {
-        "langserver": "kotlin-language-server",
-        "packages": "",
-        "langserver_binary": "kotlin-language-server"
-    },
-    {
-        "langserver": "lexical",
-        "packages": "",
-        "langserver_binary": "start_lexical.sh"
-    },
-    {
-        "langserver": "lua-lsp",
-        "packages": "",
-        "langserver_binary": "lua-lsp"
-    },
-    {
-        "langserver": "marksman",
-        "packages": "",
-        "langserver_binary": "marksman"
-    },
-    {
-        "langserver": "metals",
-        "packages": "",
-        "langserver_binary": "metals"
-    },
-    {
-        "langserver": "mint-ls",
-        "packages": "",
-        "langserver_binary": "mint"
-    },
-    {
-        "langserver": "mojo-lsp-server",
-        "packages": "",
-        "langserver_binary": "mojo-lsp-server"
-    },
-    {
-        "langserver": "move-analyzer",
-        "packages": "",
-        "langserver_binary": "move-analyzer"
-    },
-    {
-        "langserver": "nextls",
-        "packages": "",
-        "langserver_binary": "nextls"
-    },
-    {
-        "langserver": "nil",
-        "packages": "nil",
-        "langserver_binary": "nil"
-    },
-    {
-        "langserver": "nixd",
-        "packages": "",
-        "langserver_binary": "nixd"
-    },
-    {
-        "langserver": "nls",
-        "packages": "",
-        "langserver_binary": "nls"
-    },
-    {
-        "langserver": "ocamllsp",
-        "packages": "",
-        "langserver_binary": "ocamllsp"
-    },
-    {
-        "langserver": "omnisharp-dotnet",
-        "packages": "",
-        "langserver_binary": "%USER_EMACS_DIRECTORY%\\.cache\\omnisharp\\OmniSharp.exe"
-    },
-    {
-        "langserver": "omnisharp-mono",
-        "packages": "",
-        "langserver_binary": "mono"
-    },
-    {
-        "langserver": "perl-language-server",
-        "packages": "",
-        "langserver_binary": "perl"
-    },
-    {
-        "langserver": "phpactor",
-        "packages": "",
-        "langserver_binary": "phpactor"
-    },
-    {
-        "langserver": "purescript-language-server",
-        "packages": "",
-        "langserver_binary": "purescript-language-server"
-    },
-    {
-        "langserver": "pylsp",
-        "packages": "",
-        "langserver_binary": "pylsp"
-    },
-    {
-        "langserver": "pyright",
-        "packages": "pyright",
-        "langserver_binary": "pyright-langserver"
-    },
-    {
-        "langserver": "pyright-background-analysis",
-        "packages": "pyright",
-        "langserver_binary": "pyright-langserver"
-    },
-    {
-        "langserver": "pyright-background-analysis_ruff",
-        "packages": "pyright,ruff-lsp",
-        "langserver_binary": "pyright-langserver,ruff-lsp"
-    },
-    {
-        "langserver": "pyright_ruff",
-        "packages": "pyright,ruff-lsp",
-        "langserver_binary": "pyright-langserver,ruff-lsp"
-    },
-    {
-        "langserver": "python-ms",
-        "packages": "",
-        "langserver_binary": "Microsoft.Python.LanguageServer"
-    },
-    {
-        "langserver": "qmlls",
-        "packages": "",
-        "langserver_binary": "qmlls"
-    },
-    {
-        "langserver": "racket-langserver",
-        "packages": "",
-        "langserver_binary": "racket"
-    },
-    {
-        "langserver": "rlanguageserver",
-        "packages": "",
-        "langserver_binary": "R"
-    },
-    {
-        "langserver": "rnix-lsp",
-        "packages": "",
-        "langserver_binary": "rnix-lsp"
-    },
-    {
-        "langserver": "ruff",
-        "packages": "ruff-lsp",
-        "langserver_binary": "ruff-lsp"
-    },
-    {
-        "langserver": "rust-analyzer",
-        "packages": "",
-        "langserver_binary": "rust-analyzer"
-    },
-    {
-        "langserver": "serve-d",
-        "packages": "",
-        "langserver_binary": "serve-d"
-    },
-    {
-        "langserver": "solargraph",
-        "packages": "",
-        "langserver_binary": "solargraph"
-    },
-    {
-        "langserver": "solidity",
-        "packages": "",
-        "langserver_binary": "nomicfoundation-solidity-language-server"
-    },
-    {
-        "langserver": "sourcekit-lsp",
-        "packages": "",
-        "langserver_binary": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp"
-    },
-    {
-        "langserver": "sumneko",
-        "packages": "",
-        "langserver_binary": "lua-language-server"
-    },
-    {
-        "langserver": "svelteserver",
-        "packages": "",
-        "langserver_binary": "svelteserver"
-    },
-    {
-        "langserver": "tailwindcss",
-        "packages": "",
-        "langserver_binary": "tailwindcss-language-server"
-    },
-    {
-        "langserver": "texlab",
-        "packages": "",
-        "langserver_binary": "texlab"
-    },
-    {
-        "langserver": "typescript",
-        "packages": "nodePackages.typescript-language-server",
-        "langserver_binary": "typescript-language-server"
-    },
-    {
-        "langserver": "typescript_eslint",
-        "packages": "nodePackages.typescript-language-server,vscode-langservers-extracted",
-        "langserver_binary": "typescript-language-server,vscode-eslint-language-server"
-    },
-    {
-        "langserver": "typescriptreact",
-        "packages": "nodePackages.typescript-language-server",
-        "langserver_binary": "typescript-language-server"
-    },
-    {
-        "langserver": "typescriptreact_eslint",
-        "packages": "nodePackages.typescript-language-server,vscode-langservers-extracted",
-        "langserver_binary": "typescript-language-server,vscode-eslint-language-server"
-    },
-    {
-        "langserver": "typst-lsp",
-        "packages": "typst-lsp",
-        "langserver_binary": "typst-lsp"
-    },
-    {
-        "langserver": "vale-ls",
-        "packages": "",
-        "langserver_binary": "vale-ls"
-    },
-    {
-        "langserver": "verible",
-        "packages": "",
-        "langserver_binary": "verible-verilog-ls"
-    },
-    {
-        "langserver": "vhdl-tool",
-        "packages": "",
-        "langserver_binary": "vhdl-tool"
-    },
-    {
-        "langserver": "volar",
-        "packages": "",
-        "langserver_binary": "vue-language-server.cmd"
-    },
-    {
-        "langserver": "vscode-css-language-server",
-        "packages": "vscode-langservers-extracted",
-        "langserver_binary": "vscode-css-language-server"
-    },
-    {
-        "langserver": "vscode-eslint-language-server",
-        "packages": "vscode-langservers-extracted",
-        "langserver_binary": "vscode-eslint-language-server"
-    },
-    {
-        "langserver": "vscode-html-language-server",
-        "packages": "vscode-langservers-extracted",
-        "langserver_binary": "vscode-html-language-server"
-    },
-    {
-        "langserver": "vscode-json-language-server",
-        "packages": "vscode-langservers-extracted",
-        "langserver_binary": "vscode-json-language-server"
-    },
-    {
-        "langserver": "wxml-language-server",
-        "packages": "",
-        "langserver_binary": "wxml-langserver"
-    },
-    {
-        "langserver": "yaml-language-server",
-        "packages": "",
-        "langserver_binary": "yaml-language-server"
-    },
-    {
-        "langserver": "zls",
-        "packages": "",
-        "langserver_binary": "zls"
-    },
-    {
-        "langserver": "\u6587",
-        "packages": "",
-        "langserver_binary": "wenls"
-    }
+  {
+    "langserver": "ada-language-server",
+    "packages": "",
+    "langserver_binary": "ada_language_server"
+  },
+  {
+    "langserver": "ansible-language-server",
+    "packages": "ansible-language-server",
+    "langserver_binary": "ansible-language-server"
+  },
+  {
+    "langserver": "astro-ls",
+    "packages": "",
+    "langserver_binary": "astro-ls"
+  },
+  {
+    "langserver": "basedpyright",
+    "packages": "basedpyright",
+    "langserver_binary": "basedpyright-langserver"
+  },
+  {
+    "langserver": "basedpyright_ruff",
+    "packages": "basedpyright,ruff-lsp",
+    "langserver_binary": "basedpyright-langserver,ruff-lsp"
+  },
+  {
+    "langserver": "bash-language-server",
+    "packages": "bash-language-server",
+    "langserver_binary": "bash-language-server"
+  },
+  {
+    "langserver": "beancount-language-server",
+    "packages": "beancount-language-server",
+    "langserver_binary": "beancount-language-server"
+  },
+  {
+    "langserver": "ccls",
+    "packages": "ccls",
+    "langserver_binary": "ccls"
+  },
+  {
+    "langserver": "che-che4z-lsp-for-cobol",
+    "packages": "",
+    "langserver_binary": "cobol-language-support"
+  },
+  {
+    "langserver": "che-che4z-lsp-for-hlasm",
+    "packages": "",
+    "langserver_binary": "hlasm-language-support"
+  },
+  {
+    "langserver": "clangd",
+    "packages": "",
+    "langserver_binary": "clangd"
+  },
+  {
+    "langserver": "clojure-lsp",
+    "packages": "clojure-lsp",
+    "langserver_binary": "clojure-lsp"
+  },
+  {
+    "langserver": "cmake-language-server",
+    "packages": "cmake-language-server",
+    "langserver_binary": "cmake-language-server"
+  },
+  {
+    "langserver": "csharp-ls",
+    "packages": "csharp-ls",
+    "langserver_binary": "$HOME/.dotnet/tools/csharp-ls"
+  },
+  {
+    "langserver": "css_emmet",
+    "packages": "emmet-ls,vscode-langservers-extracted",
+    "langserver_binary": "emmet-ls,vscode-css-language-server"
+  },
+  {
+    "langserver": "css_tailwindcss",
+    "packages": "tailwindcss-language-server,vscode-langservers-extracted",
+    "langserver_binary": "tailwindcss-language-server,vscode-css-language-server"
+  },
+  {
+    "langserver": "dart-analysis-server",
+    "packages": "dart",
+    "langserver_binary": "dart"
+  },
+  {
+    "langserver": "deno",
+    "packages": "deno",
+    "langserver_binary": "deno"
+  },
+  {
+    "langserver": "digestif",
+    "packages": "",
+    "langserver_binary": "digestif"
+  },
+  {
+    "langserver": "docker-langserver",
+    "packages": "dockerfile-language-server-nodejs",
+    "langserver_binary": "docker-langserver"
+  },
+  {
+    "langserver": "ds-pinyin",
+    "packages": "",
+    "langserver_binary": "$HOME/.cargo/bin/ds-pinyin-lsp"
+  },
+  {
+    "langserver": "elixirLS",
+    "packages": "elixir-ls",
+    "langserver_binary": "language_server.sh"
+  },
+  {
+    "langserver": "elm-language-server",
+    "packages": "elmPackages.elm-language-server",
+    "langserver_binary": "elm-language-server"
+  },
+  {
+    "langserver": "emmet-ls",
+    "packages": "emmet-ls",
+    "langserver_binary": "emmet-ls"
+  },
+  {
+    "langserver": "erlang-ls",
+    "packages": "erlang-ls",
+    "langserver_binary": "erlang_ls"
+  },
+  {
+    "langserver": "fortls",
+    "packages": "fortls",
+    "langserver_binary": "fortls"
+  },
+  {
+    "langserver": "fsautocomplete",
+    "packages": "fsautocomplete",
+    "langserver_binary": "fsautocomplete"
+  },
+  {
+    "langserver": "futhark-lsp",
+    "packages": "futhark",
+    "langserver_binary": "futhark"
+  },
+  {
+    "langserver": "gleam",
+    "packages": "gleam",
+    "langserver_binary": "gleam"
+  },
+  {
+    "langserver": "glsl-language-server",
+    "packages": "glslls",
+    "langserver_binary": "glslls"
+  },
+  {
+    "langserver": "gopls",
+    "packages": "gopls",
+    "langserver_binary": "gopls"
+  },
+  {
+    "langserver": "graphql-lsp",
+    "packages": "",
+    "langserver_binary": "graphql-lsp"
+  },
+  {
+    "langserver": "groovy-language-server",
+    "packages": "",
+    "langserver_binary": "groovy-language-server"
+  },
+  {
+    "langserver": "hls",
+    "packages": "haskell-language-server",
+    "langserver_binary": "haskell-language-server-wrapper"
+  },
+  {
+    "langserver": "html_emmet",
+    "packages": "emmet-ls,vscode-langservers-extracted",
+    "langserver_binary": "emmet-ls,vscode-html-language-server"
+  },
+  {
+    "langserver": "html_tailwindcss",
+    "packages": "tailwindcss-language-server,vscode-langservers-extracted",
+    "langserver_binary": "tailwindcss-language-server,vscode-html-language-server"
+  },
+  {
+    "langserver": "intelephense",
+    "packages": "nodePackages.intelephense",
+    "langserver_binary": "intelephense"
+  },
+  {
+    "langserver": "javascript",
+    "packages": "nodePackages.typescript-language-server",
+    "langserver_binary": "typescript-language-server"
+  },
+  {
+    "langserver": "javascriptreact",
+    "packages": "nodePackages.typescript-language-server",
+    "langserver_binary": "typescript-language-server"
+  },
+  {
+    "langserver": "jdtls",
+    "packages": "jdt-language-server",
+    "langserver_binary": "jdtls"
+  },
+  {
+    "langserver": "jedi",
+    "packages": "python311Packages.jedi-language-server",
+    "langserver_binary": "jedi-language-server"
+  },
+  {
+    "langserver": "jedi_ruff",
+    "packages": "python311Packages.jedi-language-server,ruff-lsp",
+    "langserver_binary": "jedi-language-server,ruff-lsp"
+  },
+  {
+    "langserver": "jsonnet-language-server",
+    "packages": "jsonnet-language-server",
+    "langserver_binary": "jsonnet-language-server"
+  },
+  {
+    "langserver": "julials",
+    "packages": "",
+    "langserver_binary": "julia"
+  },
+  {
+    "langserver": "kotlin-language-server",
+    "packages": "kotlin-language-server",
+    "langserver_binary": "kotlin-language-server"
+  },
+  {
+    "langserver": "lexical",
+    "packages": "",
+    "langserver_binary": "start_lexical.sh"
+  },
+  {
+    "langserver": "lua-lsp",
+    "packages": "lua54Packages.lua-lsp",
+    "langserver_binary": "lua-lsp"
+  },
+  {
+    "langserver": "marksman",
+    "packages": "marksman",
+    "langserver_binary": "marksman"
+  },
+  {
+    "langserver": "metals",
+    "packages": "metals",
+    "langserver_binary": "metals"
+  },
+  {
+    "langserver": "mint-ls",
+    "packages": "mint",
+    "langserver_binary": "mint"
+  },
+  {
+    "langserver": "mojo-lsp-server",
+    "packages": "",
+    "langserver_binary": "mojo-lsp-server"
+  },
+  {
+    "langserver": "move-analyzer",
+    "packages": "",
+    "langserver_binary": "move-analyzer"
+  },
+  {
+    "langserver": "nextls",
+    "packages": "",
+    "langserver_binary": "nextls"
+  },
+  {
+    "langserver": "nil",
+    "packages": "nil",
+    "langserver_binary": "nil"
+  },
+  {
+    "langserver": "nixd",
+    "packages": "nixd",
+    "langserver_binary": "nixd"
+  },
+  {
+    "langserver": "nls",
+    "packages": "nls",
+    "langserver_binary": "nls"
+  },
+  {
+    "langserver": "ocamllsp",
+    "packages": "",
+    "langserver_binary": "ocamllsp"
+  },
+  {
+    "langserver": "omnisharp-dotnet",
+    "packages": "",
+    "langserver_binary": "%USER_EMACS_DIRECTORY%\\.cache\\omnisharp\\OmniSharp.exe"
+  },
+  {
+    "langserver": "omnisharp-mono",
+    "packages": "",
+    "langserver_binary": "mono"
+  },
+  {
+    "langserver": "perl-language-server",
+    "packages": "perl538Packages.PerlLanguageServer",
+    "langserver_binary": "perl"
+  },
+  {
+    "langserver": "phpactor",
+    "packages": "phpactor",
+    "langserver_binary": "phpactor"
+  },
+  {
+    "langserver": "purescript-language-server",
+    "packages": "nodePackages.purescript-language-server",
+    "langserver_binary": "purescript-language-server"
+  },
+  {
+    "langserver": "pylsp",
+    "packages": "python311Packages.python-lsp-server",
+    "langserver_binary": "pylsp"
+  },
+  {
+    "langserver": "pylsp_ruff",
+    "packages": "python311Packages.python-lsp-server,ruff-lsp",
+    "langserver_binary": "pylsp,ruff-lsp"
+  },
+  {
+    "langserver": "pyright",
+    "packages": "pyright",
+    "langserver_binary": "pyright-langserver"
+  },
+  {
+    "langserver": "pyright-background-analysis",
+    "packages": "pyright",
+    "langserver_binary": "pyright-langserver"
+  },
+  {
+    "langserver": "pyright-background-analysis_ruff",
+    "packages": "pyright,ruff-lsp",
+    "langserver_binary": "pyright-langserver,ruff-lsp"
+  },
+  {
+    "langserver": "pyright_ruff",
+    "packages": "pyright,ruff-lsp",
+    "langserver_binary": "pyright-langserver,ruff-lsp"
+  },
+  {
+    "langserver": "python-ms",
+    "packages": "",
+    "langserver_binary": "Microsoft.Python.LanguageServer"
+  },
+  {
+    "langserver": "qmlls",
+    "packages": "",
+    "langserver_binary": "qmlls"
+  },
+  {
+    "langserver": "racket-langserver",
+    "packages": "",
+    "langserver_binary": "racket"
+  },
+  {
+    "langserver": "rlanguageserver",
+    "packages": "R",
+    "langserver_binary": "R"
+  },
+  {
+    "langserver": "rnix-lsp",
+    "packages": "",
+    "langserver_binary": "rnix-lsp"
+  },
+  {
+    "langserver": "ruff",
+    "packages": "ruff-lsp",
+    "langserver_binary": "ruff-lsp"
+  },
+  {
+    "langserver": "rust-analyzer",
+    "packages": "rust-analyzer",
+    "langserver_binary": "rust-analyzer"
+  },
+  {
+    "langserver": "serve-d",
+    "packages": "serve-d",
+    "langserver_binary": "serve-d"
+  },
+  {
+    "langserver": "solargraph",
+    "packages": "rubyPackages.solargraph",
+    "langserver_binary": "solargraph"
+  },
+  {
+    "langserver": "solidity",
+    "packages": "",
+    "langserver_binary": "nomicfoundation-solidity-language-server"
+  },
+  {
+    "langserver": "sourcekit-lsp",
+    "packages": "",
+    "langserver_binary": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp"
+  },
+  {
+    "langserver": "sumneko",
+    "packages": "lua-language-server",
+    "langserver_binary": "lua-language-server"
+  },
+  {
+    "langserver": "svelteserver",
+    "packages": "",
+    "langserver_binary": "svelteserver"
+  },
+  {
+    "langserver": "tailwindcss",
+    "packages": "tailwindcss-language-server",
+    "langserver_binary": "tailwindcss-language-server"
+  },
+  {
+    "langserver": "terraform-ls",
+    "packages": "terraform-ls",
+    "langserver_binary": "terraform-ls"
+  },
+  {
+    "langserver": "texlab",
+    "packages": "texlab",
+    "langserver_binary": "texlab"
+  },
+  {
+    "langserver": "typescript",
+    "packages": "nodePackages.typescript-language-server",
+    "langserver_binary": "typescript-language-server"
+  },
+  {
+    "langserver": "typescript_eslint",
+    "packages": "nodePackages.typescript-language-server,vscode-langservers-extracted",
+    "langserver_binary": "typescript-language-server,vscode-eslint-language-server"
+  },
+  {
+    "langserver": "typescriptreact",
+    "packages": "nodePackages.typescript-language-server",
+    "langserver_binary": "typescript-language-server"
+  },
+  {
+    "langserver": "typescriptreact_eslint",
+    "packages": "nodePackages.typescript-language-server,vscode-langservers-extracted",
+    "langserver_binary": "typescript-language-server,vscode-eslint-language-server"
+  },
+  {
+    "langserver": "typst-lsp",
+    "packages": "typst-lsp",
+    "langserver_binary": "typst-lsp"
+  },
+  {
+    "langserver": "vale-ls",
+    "packages": "vale-ls",
+    "langserver_binary": "vale-ls"
+  },
+  {
+    "langserver": "verible",
+    "packages": "verible",
+    "langserver_binary": "verible-verilog-ls"
+  },
+  {
+    "langserver": "vhdl-tool",
+    "packages": "",
+    "langserver_binary": "vhdl-tool"
+  },
+  {
+    "langserver": "volar",
+    "packages": "",
+    "langserver_binary": "vue-language-server.cmd"
+  },
+  {
+    "langserver": "vscode-css-language-server",
+    "packages": "vscode-langservers-extracted",
+    "langserver_binary": "vscode-css-language-server"
+  },
+  {
+    "langserver": "vscode-eslint-language-server",
+    "packages": "vscode-langservers-extracted",
+    "langserver_binary": "vscode-eslint-language-server"
+  },
+  {
+    "langserver": "vscode-html-language-server",
+    "packages": "vscode-langservers-extracted",
+    "langserver_binary": "vscode-html-language-server"
+  },
+  {
+    "langserver": "vscode-json-language-server",
+    "packages": "vscode-langservers-extracted",
+    "langserver_binary": "vscode-json-language-server"
+  },
+  {
+    "langserver": "wxml-language-server",
+    "packages": "",
+    "langserver_binary": "wxml-langserver"
+  },
+  {
+    "langserver": "yaml-language-server",
+    "packages": "yaml-language-server",
+    "langserver_binary": "yaml-language-server"
+  },
+  {
+    "langserver": "yang-lsp",
+    "packages": "",
+    "langserver_binary": "yang-lsp"
+  },
+  {
+    "langserver": "zls",
+    "packages": "zls",
+    "langserver_binary": "zls"
+  },
+  {
+    "langserver": "\u6587",
+    "packages": "",
+    "langserver_binary": "wenls"
+  }
 ]

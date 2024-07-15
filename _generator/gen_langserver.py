@@ -64,7 +64,7 @@ def process(server_path, handler):
     ]
 
     with open("langserver.json", "w") as f:
-        json.dump(langserver_list, f, indent=4)
+        json.dump(langserver_list, f, indent=2)
 
     print(f"processed {server_path} json files")
 
