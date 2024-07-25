@@ -7,6 +7,8 @@ This repository provides automation to generate devcontainer features for every 
 # Available Features
 You can find all available features in the [Packages](https://github.com/nohzafk?tab=packages&repo_name=devcontainer-feature-emacs-lsp-bridge) section.
 
+If the base image is has a python installed, lsp-bridge will now use it to create virtual environment instead of installing python from nix.
+
 # Connect lsp-bridge to Container
 Here is how you can set up [lsp-bridge](https://github.com/manateelazycat/lsp-bridge) to connect to the container and open a file in Emacs to start the auto-completion.
 

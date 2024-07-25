@@ -1,6 +1,6 @@
 {
   "id": "lua-lsp",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "name": "emacs lsp-bridge lua-lsp language server",
   "description": "emacs lsp-bridge lua-lsp language server environment installed by Nix Pacakge Manager",
   "options": {
