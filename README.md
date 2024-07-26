@@ -19,12 +19,12 @@ Add a `.devcontainer/devcontainer.json` to your project. Below is an example con
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
-	"name": "Node.js & TypeScript",
+	"name": "Ubuntu",
     // Your base image
-	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
     // Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-		"ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/typescript_eslint:latest": {}
+		"ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/gleam:latest": {}
 	},
 	"forwardPorts": [
         9997,
@@ -32,7 +32,7 @@ Add a `.devcontainer/devcontainer.json` to your project. Below is an example con
         9999
     ],
     // More info: https://aka.ms/dev-containers-non-root.
-	"remoteUser": "root"
+	"remoteUser": "vscode"
 }
 ```
 
