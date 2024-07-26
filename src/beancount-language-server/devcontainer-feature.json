@@ -1,6 +1,6 @@
 {
   "id": "beancount-language-server",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "name": "emacs lsp-bridge beancount-language-server language server",
   "description": "emacs lsp-bridge beancount-language-server language server environment installed by Nix Pacakge Manager",
   "options": {

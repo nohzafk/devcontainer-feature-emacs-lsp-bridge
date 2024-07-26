@@ -5,17 +5,26 @@ PYTHON_CMD="/tmp/lsp-bridge-venv/bin/python3"
 LSP_BRIDGE_SCRIPT="/tmp/lsp-bridge/lsp_bridge.py"
 LOG_FILE="/tmp/lsp-bridge.log"
 
-if ! pidof $PYTHON_CMD >/dev/null 2>&1; then
-    echo -e "Start lsp-bridge process as user $(whoami)" | tee >$LOG_FILE
-    start_ok=false
-    # start the process in background
-    $PYTHON_CMD $LSP_BRIDGE_SCRIPT >>$LOG_FILE 2>&1 &
-    if [ "$?" = "0" ]; then
-        start_ok=true
-    fi
-    if [ "${start_ok}" = "false" ]; then
-        echo -e 'Start lsp-bridge failed' | tee >>$LOG_FILE
+is_process_running() {
+    pgrep -f "$PYTHON_CMD.*$LSP_BRIDGE_SCRIPT" >/dev/null
+}
+
+if ! is_process_running; then
+    echo "Start lsp-bridge process as user $(whoami)" | tee "$LOG_FILE"
+
+    # Start the process in background
+    $PYTHON_CMD $LSP_BRIDGE_SCRIPT >>"$LOG_FILE" 2>&1 &
+
+    # Wait a moment for the process to start
+    sleep 2
+
+    # Check if the process is running
+    if is_process_running; then
+        echo "Start lsp-bridge successfully" | tee -a "$LOG_FILE"
     else
-        echo -e 'Start lsp-bridge successfully' | tee >>$LOG_FILE
+        echo "Start lsp-bridge failed" | tee -a "$LOG_FILE"
+        exit 1
     fi
+else
+    echo "lsp-bridge process is already running" | tee -a "$LOG_FILE"
 fi

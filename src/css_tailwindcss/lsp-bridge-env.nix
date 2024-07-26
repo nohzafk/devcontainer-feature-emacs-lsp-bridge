@@ -11,27 +11,25 @@ in pkgs.mkShell {
 
   shellHook = ''
     # Check if system Python is available
-    if command -v python3 &> /dev/null; then
+    if command -v python3 &> /dev/null && command -v pip3 &>/dev/null; then
       PYTHON_CMD="python3"
-      # Use system pip to install virtualenv
-      pip3 install --user virtualenv
-      VIRTUALENV_CMD="$HOME/.local/bin/virtualenv"
     else
       PYTHON_CMD="${pkgs.python3}/bin/python3"
-      VIRTUALENV_CMD="${pkgs.python3Packages.virtualenv}/bin/virtualenv"
     fi
 
     if [ ! -d "${lspBridgeVenvDir}" ]; then
-      $VIRTUALENV_CMD "${lspBridgeVenvDir}"
+      $PYTHON_CMD -m venv "${lspBridgeVenvDir}" || { echo "Failed to create virtual environment"; exit 1; }
     fi
-    source "${lspBridgeVenvDir}/bin/activate"
-    
+    source "${lspBridgeVenvDir}/bin/activate" || { echo "Failed to activate virtual environment"; exit 1; }
+
     unset SOURCE_DATE_EPOCH
 
-    pip install -r requirements.txt
+    # Use the venv's pip to install requirements
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt || { echo "Failed to install requirements"; exit 1; }
 
     if [[ ! -d ${lspBridgeLinkDir} ]]; then
-      ln -s ${lspBridgeSrc} ${lspBridgeLinkDir}
+      ln -s ${lspBridgeSrc} ${lspBridgeLinkDir} || { echo "Failed to create symbolic link"; exit 1; }
     fi
   '';
 }

@@ -7,7 +7,7 @@ This repository provides automation to generate devcontainer features for every 
 # Available Features
 You can find all available features in the [Packages](https://github.com/nohzafk?tab=packages&repo_name=devcontainer-feature-emacs-lsp-bridge) section.
 
-If the base image is has a python installed, lsp-bridge will now use it to create virtual environment instead of installing python from nix.
+If `python3` and `pip3` are available in the base image, `lsp-bridge` will use it to create virtual environment instead of installing another Python interprepter from nix.
 
 # Connect lsp-bridge to Container
 Here is how you can set up [lsp-bridge](https://github.com/manateelazycat/lsp-bridge) to connect to the container and open a file in Emacs to start the auto-completion.
@@ -71,6 +71,8 @@ This is needed to communicate with the lsp-bridge server inside the container. E
 
 ### Remote User
 Identify the **default user** used by your base image, such as `root` or `vscode`.
+
+It is important to get this use right, otherwise lsp-bridge won't be working, if you use vscode to start the devcontainer, mostly it will be **vscode**.
 
 This user is used to spawn the `lsp-bridge` server process, and you need to use it when opening a file in Emacs. For more information, see the [remoteUser documentation](https://containers.dev/implementors/json_reference/#remoteUser).
 
