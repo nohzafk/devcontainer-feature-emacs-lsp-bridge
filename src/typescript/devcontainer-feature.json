@@ -1,6 +1,6 @@
 {
   "id": "typescript",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "name": "emacs lsp-bridge typescript language server",
   "description": "emacs lsp-bridge typescript language server environment installed by Nix Pacakge Manager",
   "options": {

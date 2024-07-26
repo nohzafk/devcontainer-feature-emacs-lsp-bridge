@@ -6,7 +6,7 @@ LSP_BRIDGE_SCRIPT="/tmp/lsp-bridge/lsp_bridge.py"
 LOG_FILE="/tmp/lsp-bridge.log"
 
 is_process_running() {
-    pgrep -f "$PYTHON_CMD.*$LSP_BRIDGE_SCRIPT" >/dev/null
+    ps aux | grep "$PYTHON_CMD.*$LSP_BRIDGE_SCRIPT" | grep -v grep >/dev/null
 }
 
 if ! is_process_running; then
@@ -28,3 +28,4 @@ if ! is_process_running; then
 else
     echo "lsp-bridge process is already running" | tee -a "$LOG_FILE"
 fi
+
