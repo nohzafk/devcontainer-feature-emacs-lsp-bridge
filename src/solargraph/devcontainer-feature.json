@@ -1,6 +1,6 @@
 {
   "id": "solargraph",
-  "version": "0.4.9",
+  "version": "0.4.10",
   "name": "emacs lsp-bridge solargraph language server",
   "description": "emacs lsp-bridge solargraph language server environment installed by Nix Pacakge Manager",
   "options": {

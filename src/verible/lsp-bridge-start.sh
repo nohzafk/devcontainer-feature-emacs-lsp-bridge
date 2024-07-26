@@ -11,15 +11,9 @@ is_process_running() {
     elif command -v ps >/dev/null 2>&1; then
         ps aux | grep "$PYTHON_CMD.*$LSP_BRIDGE_SCRIPT" | grep -v grep >/dev/null
     else
-        # Fallback to /proc filesystem
-        for pid in /proc/[0-9]*; do
-            if [ -e "$pid/cmdline" ]; then
-                if grep -q "$PYTHON_CMD.*$LSP_BRIDGE_SCRIPT" "$pid/cmdline"; then
-                    return 0
-                fi
-            fi
-        done
-        return 1
+        # no ps under debian:latest
+        apt-get -y update && apt-get -y install procps
+        ps aux | grep "$PYTHON_CMD.*$LSP_BRIDGE_SCRIPT" | grep -v grep >/dev/null
     fi
 }
 
@@ -37,9 +31,9 @@ if ! is_process_running; then
         echo "Start lsp-bridge successfully" | tee -a "$LOG_FILE"
     else
         echo "Start lsp-bridge failed" | tee -a "$LOG_FILE"
+        cat "$LOG_FILE"
         exit 1
     fi
 else
     echo "lsp-bridge process is already running" | tee -a "$LOG_FILE"
 fi
-

@@ -13,23 +13,9 @@ jobs:
     strategy:
       matrix:
         features:
-          - docker-langserver
           - javascript
-          - jedi
-          - jedi_ruff
-          - nil          
-          - pyright
-          - pyright_ruff
-          - pyright-background-analysis
-          - pyright-background-analysis_ruff          
-          - ruff
-          - typescript
+          - basedpyright_ruff
           - typescript_eslint
-          - typescriptreact
-          - typst-lsp
-          - vscode-css-language-server
-          - vscode-eslint-language-server
-          - vscode-html-language-server
           - vscode-json-language-server
         baseImage:
           - debian:latest
@@ -49,11 +35,11 @@ jobs:
   #   continue-on-error: true
   #   strategy:
   #     matrix:
-  #       features:          
-  #         - jedi_ruff        
-  #         - pyright_ruff          
+  #       features:
+  #         - jedi_ruff
+  #         - pyright_ruff
   #         - pyright-background-analysis_ruff
-  #         - typescript_eslint          
+  #         - typescript_eslint
   #   steps:
   #     - uses: actions/checkout@v3
 

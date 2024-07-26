@@ -1,6 +1,6 @@
 {
   "id": "mint-ls",
-  "version": "0.4.9",
+  "version": "0.4.10",
   "name": "emacs lsp-bridge mint-ls language server",
   "description": "emacs lsp-bridge mint-ls language server environment installed by Nix Pacakge Manager",
   "options": {
