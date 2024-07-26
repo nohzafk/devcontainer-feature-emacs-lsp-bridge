@@ -16,8 +16,6 @@ Here is how you can set up [lsp-bridge](https://github.com/manateelazycat/lsp-br
 Add a `.devcontainer/devcontainer.json` to your project. Below is an example configuration:
 
 ```json
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
 	"name": "Ubuntu",
     // Your base image
