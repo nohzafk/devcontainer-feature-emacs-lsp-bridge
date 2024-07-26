@@ -1,6 +1,6 @@
 {
   "id": "gleam",
-  "version": "0.4.8",
+  "version": "0.4.9",
   "name": "emacs lsp-bridge gleam language server",
   "description": "emacs lsp-bridge gleam language server environment installed by Nix Pacakge Manager",
   "options": {
