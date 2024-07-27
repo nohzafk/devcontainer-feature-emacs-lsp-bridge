@@ -6,8 +6,8 @@ pkgs.stdenv.mkDerivation {
   src = pkgs.fetchFromGitHub {
     owner = "nohzafk";
     repo = "lsp-bridge";
-    rev = "e06d547";
-    sha256 = "sha256-OBePqd9pZ65ZZR6vEu8MpMBcoJfjJiwFjWCTsucQSdM=";
+    rev = "567496c";
+    sha256 = "sha256-qeoKPwK3qKcvUFchaQYCCQmSlXgN+Tt2kU+lXqiUwaw=";
   };
   dontConfigure = true;
   doUnpack = true;

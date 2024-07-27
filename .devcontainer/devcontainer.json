@@ -20,9 +20,8 @@
             ]
         }
     },
-    "features": {
-        // turn this on if on non Apple-Sillion computer to run devcontainer cli inside container
-        // "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "features": {        
+        "ghcr.io/devcontainers/features/docker-in-docker:latest": {},
         "ghcr.io/devcontainers/features/python:1": {}
     },
     "remoteUser": "node",
