@@ -5,9 +5,7 @@
             "settings": {
                 "json.schemas": [
                     {
-                        "fileMatch": [
-                            "*/devcontainer-feature.json"
-                        ],
+                        "fileMatch": ["*/devcontainer-feature.json"],
                         "url": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json"
                     }
                 ]
@@ -20,10 +18,14 @@
             ]
         }
     },
-    "features": {        
+    "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:latest": {},
         "ghcr.io/devcontainers/features/python:1": {}
     },
     "remoteUser": "node",
-    "updateContentCommand": "bash .devcontainer/install-deps.sh"
+    "onCreateCommand": "bash .devcontainer/install-deps.sh",
+    "mounts": [
+        "source=${localWorkspaceFolder}/.cache/npm-global,target=/usr/local/share/npm-global,type=bind,consistency=cached",
+        "source=${localWorkspaceFolder}/.cache/cookiecutter,target=/usr/local/py-utils/venvs/cookiecutter,type=bind,consistency=cached"
+    ]
 }
