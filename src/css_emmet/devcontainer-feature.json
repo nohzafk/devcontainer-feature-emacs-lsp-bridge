@@ -1,6 +1,6 @@
 {
   "id": "css_emmet",
-  "version": "0.4.12",
+  "version": "0.4.13",
   "name": "emacs lsp-bridge css_emmet language server",
   "description": "emacs lsp-bridge css_emmet language server environment installed by Nix Pacakge Manager",
   "options": {

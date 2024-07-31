@@ -30,13 +30,11 @@ for entry in data:
         no_input=True,
         output_dir=f"{target_src_dir}/../",
         extra_context=entry,
-    )
-    print(f"Generated {target_src_dir}")
+    )    
 
     cookiecutter(
         "test_template",
         no_input=True,
         output_dir=f"{target_test_dir}/../",
         extra_context=entry,
-    )
-    print(f"Generated {target_test_dir}")
+    )    
