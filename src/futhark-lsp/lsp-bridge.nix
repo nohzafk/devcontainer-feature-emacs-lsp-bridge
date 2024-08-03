@@ -2,12 +2,12 @@
 
 pkgs.stdenv.mkDerivation {
   pname = "lsp-bridge-src";
-  version = "20240730-devcontainer-feature";
+  version = "20240804-devcontainer-feature";
   src = pkgs.fetchFromGitHub {
     owner = "nohzafk";
     repo = "lsp-bridge";
-    rev = "81bf220";
-    sha256 = "sha256-6p5M2vvKuSw/d0RNFsDdmO2ex6iG9g2BqXhF3tgoIMQ=";
+    rev = "6580e9d";
+    sha256 = "sha256-rsQhuAu0NVyCt4ROZfXraZXNfvnjl4PNSVvFNi9ALLs=";
   };
   dontConfigure = true;
   doUnpack = true;
