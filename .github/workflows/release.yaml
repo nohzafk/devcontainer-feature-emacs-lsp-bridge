@@ -1,7 +1,6 @@
 name: "Release dev container features & Generate Documentation"
 on:
   workflow_dispatch:
-  workflow_call:
   repository_dispatch:
     types: [trigger-release]
 
