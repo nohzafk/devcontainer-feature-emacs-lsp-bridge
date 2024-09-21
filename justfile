@@ -22,14 +22,36 @@ test: generate
 
     if [ -n "$got_value" ]; then
         echo "The 'got:' value is: $got_value"
-        sed -i "s/sha256 = .*/sha256 = $got_value/" _generator/src_template/{{cookiecutter.langserver}}/lsp-bridge.nix
-
+        sed -i "s|sha256 = .*|sha256 = $got_value|" _generator/src_template/{{{{cookiecutter.langserver}}/lsp-bridge.nix
+        
         echo "Updated lsp-bridge.nix with the new sha256 value."
         echo "Generate and test again."
         exit 1
     else
         echo "Test passed"
     fi
+
+# update the version for release tag
+update_version:
+    #!/bin/bash
+    file="_generator/src_template/{{{{cookiecutter.langserver}}/devcontainer-feature.json"
+    
+    # Read the current version
+    current_version=$(jq -r '.version' "$file")
+    
+    # Split the version into parts
+    IFS='.' read -ra version_parts <<< "$current_version"
+    
+    # Increment the last part
+    ((version_parts[2]++))
+    
+    # Join the parts back together
+    new_version="${version_parts[0]}.${version_parts[1]}.${version_parts[2]}"
+    
+    # Update the file with the new version
+    jq --arg version "$new_version" '.version = $version' "$file" > temp.json && mv temp.json "$file"
+    
+    echo "Version updated from $current_version to $new_version"
 
 # open a devcontainer in VSCode
 devcontainer:
