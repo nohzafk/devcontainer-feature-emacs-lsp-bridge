@@ -7,7 +7,7 @@ emacs lsp-bridge typescriptreact language server environment installed by Nix Pa
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/typescriptreact:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/typescriptreact:1": {}
 }
 ```
 

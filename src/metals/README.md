@@ -7,7 +7,7 @@ emacs lsp-bridge metals language server environment installed by Nix Pacakge Man
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/metals:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/metals:1": {}
 }
 ```
 

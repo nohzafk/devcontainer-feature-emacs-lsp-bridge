@@ -7,7 +7,7 @@ emacs lsp-bridge vscode-eslint-language-server language server environment insta
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/vscode-eslint-language-server:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/vscode-eslint-language-server:1": {}
 }
 ```
 

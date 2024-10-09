@@ -7,7 +7,7 @@ emacs lsp-bridge beancount-language-server language server environment installed
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/beancount-language-server:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/beancount-language-server:1": {}
 }
 ```
 

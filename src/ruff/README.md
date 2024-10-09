@@ -7,7 +7,7 @@ emacs lsp-bridge ruff language server environment installed by Nix Pacakge Manag
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/ruff:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/ruff:1": {}
 }
 ```
 

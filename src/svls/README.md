@@ -7,7 +7,7 @@ emacs lsp-bridge svls language server environment installed by Nix Pacakge Manag
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/svls:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/svls:1": {}
 }
 ```
 

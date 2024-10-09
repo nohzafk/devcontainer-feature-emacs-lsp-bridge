@@ -7,7 +7,7 @@ emacs lsp-bridge typescript_eslint language server environment installed by Nix 
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/typescript_eslint:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/typescript_eslint:1": {}
 }
 ```
 

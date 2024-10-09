@@ -7,7 +7,7 @@ emacs lsp-bridge clojure-lsp language server environment installed by Nix Pacakg
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/clojure-lsp:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/clojure-lsp:1": {}
 }
 ```
 

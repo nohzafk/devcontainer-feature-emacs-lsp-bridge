@@ -7,7 +7,7 @@ emacs lsp-bridge glsl-language-server language server environment installed by N
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/glsl-language-server:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/glsl-language-server:1": {}
 }
 ```
 

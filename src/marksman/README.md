@@ -7,7 +7,7 @@ emacs lsp-bridge marksman language server environment installed by Nix Pacakge M
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/marksman:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/marksman:1": {}
 }
 ```
 

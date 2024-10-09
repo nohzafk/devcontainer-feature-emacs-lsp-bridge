@@ -7,7 +7,7 @@ emacs lsp-bridge intelephense language server environment installed by Nix Pacak
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/intelephense:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/intelephense:1": {}
 }
 ```
 

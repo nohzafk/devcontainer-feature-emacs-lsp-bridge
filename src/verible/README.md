@@ -7,7 +7,7 @@ emacs lsp-bridge verible language server environment installed by Nix Pacakge Ma
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/verible:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/verible:1": {}
 }
 ```
 

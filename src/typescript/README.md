@@ -7,7 +7,7 @@ emacs lsp-bridge typescript language server environment installed by Nix Pacakge
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/typescript:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/typescript:1": {}
 }
 ```
 

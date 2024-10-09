@@ -7,7 +7,7 @@ emacs lsp-bridge jdtls language server environment installed by Nix Pacakge Mana
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/jdtls:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/jdtls:1": {}
 }
 ```
 

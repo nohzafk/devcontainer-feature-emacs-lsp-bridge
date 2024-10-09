@@ -7,7 +7,7 @@ emacs lsp-bridge fsautocomplete language server environment installed by Nix Pac
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/fsautocomplete:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/fsautocomplete:1": {}
 }
 ```
 

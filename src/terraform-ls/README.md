@@ -7,7 +7,7 @@ emacs lsp-bridge terraform-ls language server environment installed by Nix Pacak
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/terraform-ls:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/terraform-ls:1": {}
 }
 ```
 

@@ -7,7 +7,7 @@ emacs lsp-bridge javascript language server environment installed by Nix Pacakge
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/javascript:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/javascript:1": {}
 }
 ```
 

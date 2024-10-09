@@ -7,7 +7,7 @@ emacs lsp-bridge fennel-ls language server environment installed by Nix Pacakge 
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/fennel-ls:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/fennel-ls:1": {}
 }
 ```
 

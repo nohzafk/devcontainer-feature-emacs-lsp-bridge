@@ -7,7 +7,7 @@ emacs lsp-bridge ansible-language-server language server environment installed b
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/ansible-language-server:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/ansible-language-server:1": {}
 }
 ```
 

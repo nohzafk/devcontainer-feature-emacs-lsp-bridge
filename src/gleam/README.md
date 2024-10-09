@@ -7,7 +7,7 @@ emacs lsp-bridge gleam language server environment installed by Nix Pacakge Mana
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/gleam:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/gleam:1": {}
 }
 ```
 

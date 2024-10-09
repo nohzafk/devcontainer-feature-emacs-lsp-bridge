@@ -7,7 +7,7 @@ emacs lsp-bridge pylsp language server environment installed by Nix Pacakge Mana
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/pylsp:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/pylsp:1": {}
 }
 ```
 

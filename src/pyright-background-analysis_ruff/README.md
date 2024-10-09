@@ -7,7 +7,7 @@ emacs lsp-bridge pyright-background-analysis_ruff language server environment in
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/pyright-background-analysis_ruff:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/pyright-background-analysis_ruff:1": {}
 }
 ```
 

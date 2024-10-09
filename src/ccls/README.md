@@ -7,7 +7,7 @@ emacs lsp-bridge ccls language server environment installed by Nix Pacakge Manag
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/ccls:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/ccls:1": {}
 }
 ```
 

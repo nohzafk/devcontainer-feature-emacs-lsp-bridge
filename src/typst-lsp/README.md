@@ -7,7 +7,7 @@ emacs lsp-bridge typst-lsp language server environment installed by Nix Pacakge 
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/typst-lsp:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/typst-lsp:1": {}
 }
 ```
 
