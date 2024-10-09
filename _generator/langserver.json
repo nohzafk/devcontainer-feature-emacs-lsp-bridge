@@ -347,7 +347,7 @@
   {
     "langserver": "omnisharp-dotnet",
     "packages": "",
-    "langserver_binary": "$HOME/.emacs.d/.cache/omnisharp/OmniSharp"
+    "langserver_binary": "%USER_EMACS_DIRECTORY%\\.cache\\omnisharp\\OmniSharp.exe"
   },
   {
     "langserver": "omnisharp-mono",
@@ -547,7 +547,7 @@
   {
     "langserver": "volar",
     "packages": "",
-    "langserver_binary": "vue-language-server"
+    "langserver_binary": "vue-language-server.cmd"
   },
   {
     "langserver": "vscode-css-language-server",
