@@ -7,7 +7,7 @@ emacs lsp-bridge millet language server environment installed by Nix Pacakge Man
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/millet:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/millet:1": {}
 }
 ```
 

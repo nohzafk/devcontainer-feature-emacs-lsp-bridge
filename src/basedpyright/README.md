@@ -7,7 +7,7 @@ emacs lsp-bridge basedpyright language server environment installed by Nix Pacak
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/basedpyright:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/basedpyright:1": {}
 }
 ```
 

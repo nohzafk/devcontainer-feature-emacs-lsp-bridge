@@ -7,7 +7,7 @@ emacs lsp-bridge texlab language server environment installed by Nix Pacakge Man
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/texlab:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/texlab:1": {}
 }
 ```
 

@@ -7,7 +7,7 @@ emacs lsp-bridge pylsp_ruff language server environment installed by Nix Pacakge
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/pylsp_ruff:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/pylsp_ruff:1": {}
 }
 ```
 

@@ -7,7 +7,7 @@ emacs lsp-bridge ballerina-lang-server language server environment installed by 
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/ballerina-lang-server:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/ballerina-lang-server:1": {}
 }
 ```
 

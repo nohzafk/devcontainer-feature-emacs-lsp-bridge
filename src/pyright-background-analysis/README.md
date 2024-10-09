@@ -7,7 +7,7 @@ emacs lsp-bridge pyright-background-analysis language server environment install
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/pyright-background-analysis:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/pyright-background-analysis:1": {}
 }
 ```
 

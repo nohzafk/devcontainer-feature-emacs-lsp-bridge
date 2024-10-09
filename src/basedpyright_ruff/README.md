@@ -7,7 +7,7 @@ emacs lsp-bridge basedpyright_ruff language server environment installed by Nix 
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/basedpyright_ruff:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/basedpyright_ruff:1": {}
 }
 ```
 

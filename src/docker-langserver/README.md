@@ -7,7 +7,7 @@ emacs lsp-bridge docker-langserver language server environment installed by Nix 
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/docker-langserver:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/docker-langserver:1": {}
 }
 ```
 

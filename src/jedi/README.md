@@ -7,7 +7,7 @@ emacs lsp-bridge jedi language server environment installed by Nix Pacakge Manag
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/jedi:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/jedi:1": {}
 }
 ```
 

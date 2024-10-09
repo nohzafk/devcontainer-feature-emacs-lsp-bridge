@@ -7,7 +7,7 @@ emacs lsp-bridge kotlin-language-server language server environment installed by
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/kotlin-language-server:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/kotlin-language-server:1": {}
 }
 ```
 

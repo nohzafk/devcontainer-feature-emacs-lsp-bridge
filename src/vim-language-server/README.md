@@ -7,7 +7,7 @@ emacs lsp-bridge vim-language-server language server environment installed by Ni
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/vim-language-server:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/vim-language-server:1": {}
 }
 ```
 

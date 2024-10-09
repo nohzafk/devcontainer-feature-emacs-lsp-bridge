@@ -7,7 +7,7 @@ emacs lsp-bridge hls language server environment installed by Nix Pacakge Manage
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/hls:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/hls:1": {}
 }
 ```
 

@@ -7,7 +7,7 @@ emacs lsp-bridge phpactor language server environment installed by Nix Pacakge M
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/phpactor:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/phpactor:1": {}
 }
 ```
 

@@ -7,7 +7,7 @@ emacs lsp-bridge vale-ls language server environment installed by Nix Pacakge Ma
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/vale-ls:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/vale-ls:1": {}
 }
 ```
 
