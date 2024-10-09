@@ -43,6 +43,7 @@ jobs:
 
               # update the version for release tag
               just update_version
+              just generate
             else
               echo "Second test after re-generation run failed"
               exit 1
