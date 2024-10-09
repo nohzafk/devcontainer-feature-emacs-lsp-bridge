@@ -63,3 +63,15 @@ jobs:
             git commit -m "Update lsp-bridge to latest version"
             git push
           fi
+
+  trigger-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    needs: [update-and-test]
+    if: success()
+    steps:
+      - name: Trigger release workflow
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          event-type: trigger-release
