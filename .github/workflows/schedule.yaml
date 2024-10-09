@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.9' 
-      - run: pip install -y pipx
+      - run: pip install pipx
 
       - name: install dependencies for just tasks
         run: bash .devcontainer/install-deps.sh
