@@ -49,6 +49,8 @@ jobs:
 
       - name: Commit and push changes if any
         if: steps.update_and_test.outputs.test_passed == 'true'
+        permissions:
+          contents: write
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
