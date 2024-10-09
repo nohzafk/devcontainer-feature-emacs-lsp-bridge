@@ -15,6 +15,11 @@
     "langserver_binary": "astro-ls"
   },
   {
+    "langserver": "ballerina-lang-server",
+    "packages": "",
+    "langserver_binary": "bal"
+  },
+  {
     "langserver": "basedpyright",
     "packages": "basedpyright",
     "langserver_binary": "basedpyright-langserver"
@@ -35,6 +40,16 @@
     "langserver_binary": "beancount-language-server"
   },
   {
+    "langserver": "benten",
+    "packages": "",
+    "langserver_binary": "benten"
+  },
+  {
+    "langserver": "camells",
+    "packages": "",
+    "langserver_binary": "camells"
+  },
+  {
     "langserver": "ccls",
     "packages": "ccls",
     "langserver_binary": "ccls"
@@ -48,6 +63,11 @@
     "langserver": "che-che4z-lsp-for-hlasm",
     "packages": "",
     "langserver_binary": "hlasm-language-support"
+  },
+  {
+    "langserver": "citation-langserver",
+    "packages": "",
+    "langserver_binary": "citation-langserver"
   },
   {
     "langserver": "clangd",
@@ -78,6 +98,11 @@
     "langserver": "css_tailwindcss",
     "packages": "tailwindcss-language-server,vscode-langservers-extracted",
     "langserver_binary": "tailwindcss-language-server,vscode-css-language-server"
+  },
+  {
+    "langserver": "cucumber-language-server",
+    "packages": "",
+    "langserver_binary": "cucumber-language-server"
   },
   {
     "langserver": "dart-analysis-server",
@@ -125,6 +150,11 @@
     "langserver_binary": "erlang_ls"
   },
   {
+    "langserver": "fennel-ls",
+    "packages": "",
+    "langserver_binary": "fennel-ls"
+  },
+  {
     "langserver": "fortls",
     "packages": "fortls",
     "langserver_binary": "fortls"
@@ -138,6 +168,11 @@
     "langserver": "futhark-lsp",
     "packages": "futhark",
     "langserver_binary": "futhark"
+  },
+  {
+    "langserver": "fuzion-language-server",
+    "packages": "",
+    "langserver_binary": "fuzion_language_server"
   },
   {
     "langserver": "gleam",
@@ -225,9 +260,19 @@
     "langserver_binary": "kotlin-language-server"
   },
   {
+    "langserver": "lemminx",
+    "packages": "",
+    "langserver_binary": "lemminx"
+  },
+  {
     "langserver": "lexical",
     "packages": "",
     "langserver_binary": "start_lexical.sh"
+  },
+  {
+    "langserver": "ltex-ls",
+    "packages": "",
+    "langserver_binary": "ltex-ls"
   },
   {
     "langserver": "lua-lsp",
@@ -243,6 +288,11 @@
     "langserver": "metals",
     "packages": "metals",
     "langserver_binary": "metals"
+  },
+  {
+    "langserver": "millet",
+    "packages": "",
+    "langserver_binary": "millet"
   },
   {
     "langserver": "mint-ls",
@@ -280,14 +330,24 @@
     "langserver_binary": "nls"
   },
   {
+    "langserver": "ntt",
+    "packages": "",
+    "langserver_binary": "ntt"
+  },
+  {
     "langserver": "ocamllsp",
     "packages": "",
     "langserver_binary": "ocamllsp"
   },
   {
+    "langserver": "ols",
+    "packages": "",
+    "langserver_binary": "ols"
+  },
+  {
     "langserver": "omnisharp-dotnet",
     "packages": "",
-    "langserver_binary": "%USER_EMACS_DIRECTORY%\\.cache\\omnisharp\\OmniSharp.exe"
+    "langserver_binary": "$HOME/.emacs.d/.cache/omnisharp/OmniSharp"
   },
   {
     "langserver": "omnisharp-mono",
@@ -303,6 +363,11 @@
     "langserver": "phpactor",
     "packages": "phpactor",
     "langserver_binary": "phpactor"
+  },
+  {
+    "langserver": "puppet-languageserver",
+    "packages": "",
+    "langserver_binary": "ruby"
   },
   {
     "langserver": "purescript-language-server",
@@ -355,6 +420,11 @@
     "langserver_binary": "racket"
   },
   {
+    "langserver": "regal",
+    "packages": "",
+    "langserver_binary": "regal"
+  },
+  {
     "langserver": "rlanguageserver",
     "packages": "R",
     "langserver_binary": "R"
@@ -405,6 +475,11 @@
     "langserver_binary": "svelteserver"
   },
   {
+    "langserver": "svls",
+    "packages": "",
+    "langserver_binary": "svls"
+  },
+  {
     "langserver": "tailwindcss",
     "packages": "tailwindcss-language-server",
     "langserver_binary": "tailwindcss-language-server"
@@ -445,6 +520,11 @@
     "langserver_binary": "typst-lsp"
   },
   {
+    "langserver": "v-analyzer",
+    "packages": "",
+    "langserver_binary": "v-analyzer"
+  },
+  {
     "langserver": "vale-ls",
     "packages": "vale-ls",
     "langserver_binary": "vale-ls"
@@ -460,9 +540,14 @@
     "langserver_binary": "vhdl-tool"
   },
   {
+    "langserver": "vim-language-server",
+    "packages": "",
+    "langserver_binary": "vim-language-server"
+  },
+  {
     "langserver": "volar",
     "packages": "",
-    "langserver_binary": "vue-language-server.cmd"
+    "langserver_binary": "vue-language-server"
   },
   {
     "langserver": "vscode-css-language-server",
@@ -483,6 +568,11 @@
     "langserver": "vscode-json-language-server",
     "packages": "vscode-langservers-extracted",
     "langserver_binary": "vscode-json-language-server"
+  },
+  {
+    "langserver": "vscode-rf-language-server",
+    "packages": "",
+    "langserver_binary": "~/.nvm/versions/node/v9.11.2/bin/node"
   },
   {
     "langserver": "wxml-language-server",

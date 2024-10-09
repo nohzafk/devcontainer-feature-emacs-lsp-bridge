@@ -6,7 +6,10 @@
   "options": {
     "version": {
       "type": "string",
-      "proposals": ["latest", "2.11"],
+      "proposals": [
+        "latest",
+        "2.11"
+      ],
       "default": "latest",
       "description": "Version of Nix to install."
     },
