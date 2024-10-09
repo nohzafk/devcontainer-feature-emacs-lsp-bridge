@@ -105,9 +105,9 @@ where
 check [docker-tramp](https://github.com/emacs-pe/docker-tramp.el) for more details.
 
 
-# Supported LSP
+# Supported language servers (81)
 - ansible-language-server
-- basedpyright
+- ballerina-lang-server
 - basedpyright_ruff
 - bash-language-server
 - beancount-language-server
@@ -124,6 +124,7 @@ check [docker-tramp](https://github.com/emacs-pe/docker-tramp.el) for more detai
 - elm-language-server
 - emmet-ls
 - erlang-ls
+- fennel-ls
 - fortls
 - fsautocomplete
 - futhark-lsp
@@ -141,13 +142,17 @@ check [docker-tramp](https://github.com/emacs-pe/docker-tramp.el) for more detai
 - jedi_ruff
 - jsonnet-language-server
 - kotlin-language-server
+- lemminx
+- ltex-ls
 - lua-lsp
 - marksman
 - metals
+- millet
 - mint-ls
 - nil
 - nixd
 - nls
+- ols
 - perl-language-server
 - phpactor
 - purescript-language-server
@@ -157,12 +162,14 @@ check [docker-tramp](https://github.com/emacs-pe/docker-tramp.el) for more detai
 - pyright-background-analysis
 - pyright-background-analysis_ruff
 - pyright_ruff
+- regal
 - rlanguageserver
 - ruff
 - rust-analyzer
 - serve-d
 - solargraph
 - sumneko
+- svls
 - tailwindcss
 - terraform-ls
 - texlab
@@ -173,6 +180,7 @@ check [docker-tramp](https://github.com/emacs-pe/docker-tramp.el) for more detai
 - typst-lsp
 - vale-ls
 - verible
+- vim-language-server
 - vscode-css-language-server
 - vscode-eslint-language-server
 - vscode-html-language-server
