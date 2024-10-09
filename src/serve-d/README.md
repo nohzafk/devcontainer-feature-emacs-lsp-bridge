@@ -7,7 +7,7 @@ emacs lsp-bridge serve-d language server environment installed by Nix Pacakge Ma
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/serve-d:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/serve-d:1": {}
 }
 ```
 

@@ -7,7 +7,7 @@ emacs lsp-bridge gopls language server environment installed by Nix Pacakge Mana
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/gopls:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/gopls:1": {}
 }
 ```
 

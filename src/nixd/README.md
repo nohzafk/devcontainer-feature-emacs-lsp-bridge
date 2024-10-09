@@ -7,7 +7,7 @@ emacs lsp-bridge nixd language server environment installed by Nix Pacakge Manag
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/nixd:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/nixd:1": {}
 }
 ```
 

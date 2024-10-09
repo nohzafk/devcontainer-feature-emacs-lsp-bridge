@@ -7,7 +7,7 @@ emacs lsp-bridge html_tailwindcss language server environment installed by Nix P
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/html_tailwindcss:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/html_tailwindcss:1": {}
 }
 ```
 

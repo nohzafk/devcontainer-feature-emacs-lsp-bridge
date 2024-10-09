@@ -7,7 +7,7 @@ emacs lsp-bridge jsonnet-language-server language server environment installed b
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/jsonnet-language-server:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/jsonnet-language-server:1": {}
 }
 ```
 

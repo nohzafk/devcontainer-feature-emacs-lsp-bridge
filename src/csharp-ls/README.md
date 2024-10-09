@@ -7,7 +7,7 @@ emacs lsp-bridge csharp-ls language server environment installed by Nix Pacakge 
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/csharp-ls:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/csharp-ls:1": {}
 }
 ```
 

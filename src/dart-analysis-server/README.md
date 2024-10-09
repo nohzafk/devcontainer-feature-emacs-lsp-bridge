@@ -7,7 +7,7 @@ emacs lsp-bridge dart-analysis-server language server environment installed by N
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/dart-analysis-server:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/dart-analysis-server:1": {}
 }
 ```
 

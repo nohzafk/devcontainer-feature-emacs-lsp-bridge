@@ -7,7 +7,7 @@ emacs lsp-bridge pyright_ruff language server environment installed by Nix Pacak
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/pyright_ruff:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/pyright_ruff:1": {}
 }
 ```
 

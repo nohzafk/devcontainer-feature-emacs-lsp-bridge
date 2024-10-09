@@ -7,7 +7,7 @@ emacs lsp-bridge vscode-css-language-server language server environment installe
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/vscode-css-language-server:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/vscode-css-language-server:1": {}
 }
 ```
 

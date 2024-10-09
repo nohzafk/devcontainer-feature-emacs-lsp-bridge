@@ -7,7 +7,7 @@ emacs lsp-bridge typescriptreact_eslint language server environment installed by
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/typescriptreact_eslint:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/typescriptreact_eslint:1": {}
 }
 ```
 

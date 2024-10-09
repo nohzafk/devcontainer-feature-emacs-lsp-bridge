@@ -7,7 +7,7 @@ emacs lsp-bridge rlanguageserver language server environment installed by Nix Pa
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/rlanguageserver:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/rlanguageserver:1": {}
 }
 ```
 

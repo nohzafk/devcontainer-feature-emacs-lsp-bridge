@@ -7,7 +7,7 @@ emacs lsp-bridge futhark-lsp language server environment installed by Nix Pacakg
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/futhark-lsp:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/futhark-lsp:1": {}
 }
 ```
 

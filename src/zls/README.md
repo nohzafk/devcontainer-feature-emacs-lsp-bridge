@@ -7,7 +7,7 @@ emacs lsp-bridge zls language server environment installed by Nix Pacakge Manage
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/zls:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/zls:1": {}
 }
 ```
 

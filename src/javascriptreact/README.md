@@ -7,7 +7,7 @@ emacs lsp-bridge javascriptreact language server environment installed by Nix Pa
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/javascriptreact:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/javascriptreact:1": {}
 }
 ```
 

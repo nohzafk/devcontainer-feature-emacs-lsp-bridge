@@ -7,7 +7,7 @@ emacs lsp-bridge jedi_ruff language server environment installed by Nix Pacakge 
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/jedi_ruff:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/jedi_ruff:1": {}
 }
 ```
 

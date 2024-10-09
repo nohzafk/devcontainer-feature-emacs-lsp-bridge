@@ -7,7 +7,7 @@ emacs lsp-bridge rust-analyzer language server environment installed by Nix Paca
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/rust-analyzer:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/rust-analyzer:1": {}
 }
 ```
 

@@ -7,7 +7,7 @@ emacs lsp-bridge html_emmet language server environment installed by Nix Pacakge
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/html_emmet:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/html_emmet:1": {}
 }
 ```
 

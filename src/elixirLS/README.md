@@ -7,7 +7,7 @@ emacs lsp-bridge elixirLS language server environment installed by Nix Pacakge M
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/elixirLS:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/elixirLS:1": {}
 }
 ```
 
