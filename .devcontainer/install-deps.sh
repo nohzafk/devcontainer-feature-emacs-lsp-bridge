@@ -6,6 +6,9 @@ fi
 if ! command -v just; then
     npm install -g just-install
 fi
+if ! command -v pipx; then
+    pip install pipx
+fi
 if [[ ! -f /usr/local/py-utils/venvs/cookiecutter/bin/cookiecutter ]]; then
     pipx install cookiecutter
     # pipx inject cookiecutter requests

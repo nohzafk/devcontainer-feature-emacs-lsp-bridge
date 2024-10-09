@@ -16,11 +16,18 @@ jobs:
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.9' 
-      - run: pip install pipx
+          python-version: '3.9'
 
-      - name: install dependencies for just tasks
-        run: bash .devcontainer/install-deps.sh
+      # keep consistency with local devcontainer settings
+      - name: Install dependencies for just tasks
+        env:
+          PIPX_BIN_DIR: /usr/local/py-utils/bin
+          PIPX_HOME: /usr/local/py-utils
+        run: |
+          sudo mkdir -p $PIPX_BIN_DIR $PIPX_HOME
+          sudo chown $USER:$USER $PIPX_BIN_DIR $PIPX_HOME
+          echo $PIPX_BIN_DIR >> $GITHUB_PATH
+          bash .devcontainer/install-deps.sh
         shell: bash
 
       # - name: Set up Nix
