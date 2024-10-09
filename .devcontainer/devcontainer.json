@@ -25,6 +25,7 @@
     "remoteUser": "node",
     "onCreateCommand": "bash .devcontainer/install-deps.sh",
     "mounts": [
+        "source=${localEnv:HOME}/.ssh,target=/home/node/.ssh,type=bind,consistency=cached",
         "source=${localWorkspaceFolder}/.cache/npm-global,target=/usr/local/share/npm-global,type=bind,consistency=cached",
         "source=${localWorkspaceFolder}/.cache/cookiecutter,target=/usr/local/py-utils/venvs/cookiecutter,type=bind,consistency=cached"
     ]
