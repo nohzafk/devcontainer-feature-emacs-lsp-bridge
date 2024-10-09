@@ -16,7 +16,7 @@
   },
   {
     "langserver": "ballerina-lang-server",
-    "packages": "",
+    "packages": "ballerina",
     "langserver_binary": "bal"
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "langserver": "fennel-ls",
-    "packages": "",
+    "packages": "fennel-ls",
     "langserver_binary": "fennel-ls"
   },
   {
@@ -261,7 +261,7 @@
   },
   {
     "langserver": "lemminx",
-    "packages": "",
+    "packages": "lemminx",
     "langserver_binary": "lemminx"
   },
   {
@@ -271,7 +271,7 @@
   },
   {
     "langserver": "ltex-ls",
-    "packages": "",
+    "packages": "ltex-ls",
     "langserver_binary": "ltex-ls"
   },
   {
@@ -291,7 +291,7 @@
   },
   {
     "langserver": "millet",
-    "packages": "",
+    "packages": "millet",
     "langserver_binary": "millet"
   },
   {
@@ -341,7 +341,7 @@
   },
   {
     "langserver": "ols",
-    "packages": "",
+    "packages": "ols",
     "langserver_binary": "ols"
   },
   {
@@ -421,7 +421,7 @@
   },
   {
     "langserver": "regal",
-    "packages": "",
+    "packages": "regal",
     "langserver_binary": "regal"
   },
   {
@@ -476,7 +476,7 @@
   },
   {
     "langserver": "svls",
-    "packages": "",
+    "packages": "svls",
     "langserver_binary": "svls"
   },
   {
@@ -541,7 +541,7 @@
   },
   {
     "langserver": "vim-language-server",
-    "packages": "",
+    "packages": "vim-language-server",
     "langserver_binary": "vim-language-server"
   },
   {
