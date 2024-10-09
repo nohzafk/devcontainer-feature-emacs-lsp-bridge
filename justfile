@@ -10,7 +10,7 @@ test: generate
 
     # Function to extract the "got:" value followed by "specified:"
     extract_got_value() {
-        awk '/got:/ {got=$NF} /specified:/ && got {print got; exit}' | tail -n 1
+        awk '/got:/ {got=$NF} /specified:/ && got {print got; exit}' | tail -n 1 | tr -d '\r\n'
     }
 
     # Run the commands, display output in real-time, and capture the "got:" value
@@ -21,10 +21,17 @@ test: generate
     )
 
     if [ -n "$got_value" ]; then
-        echo "The 'got:' value is: $got_value"
-        sed -i "s|sha256 = .*|sha256 = $got_value|" _generator/src_template/{{{{cookiecutter.langserver}}/lsp-bridge.nix
-        
-        echo "Updated lsp-bridge.nix with the new sha256 value."
+        echo "The 'got:' value is: $got_value"    
+
+        # Update sha256 in lsp-bridge.nix with latest value        
+        sed -i 's|sha256 = .*|sha256 = "'"$got_value"'";|' _generator/src_template/{{{{cookiecutter.langserver}}/lsp-bridge.nix
+        echo "Updated lsp-bridge.nix with the new sha256 value: $got_value"
+
+        # Update version in lsp-bridge.nix with today's date
+        current_date=$(date +"%Y%m%d")
+        sed -i "s|version = .*|version = \"$current_date\";|" _generator/src_template/{{{{cookiecutter.langserver}}/lsp-bridge.nix
+        echo "Updated lsp-bridge.nix with the new version: $current_date"
+
         echo "Generate and test again."
         exit 1
     else

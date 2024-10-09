@@ -7,7 +7,7 @@ pkgs.stdenv.mkDerivation {
     owner = "manateelazycat";
     repo = "lsp-bridge";
     rev = "master";
-    sha256 = sha256-ChpZhFEKvN+1oYHbQKBUMbTjk/U++kCDnImMVtcYVBc=
+    sha256 = "sha256-rsQhuAu0NVyCt4ROZfXraZXNfvnjl4PNSVvFNi9ALLs=";
   };
   dontConfigure = true;
   doUnpack = true;
