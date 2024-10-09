@@ -30,18 +30,6 @@ jobs:
           bash .devcontainer/install-deps.sh
         shell: bash
 
-      # - name: Set up Nix
-      #   uses: cachix/install-nix-action@v27
-      #   with:
-      #     nix_path: nixpkgs=channel:nixos-unstable
-
-      # - name: Install just and jq
-      #   run: |
-      #     nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs
-      #     nix-channel --update
-      #     nix-env -iA nixpkgs.just nixpkgs.jq
-      #   shell: bash
-
       - name: Update lsp-bridge.nix and run tests
         id: update_and_test
         run: |
