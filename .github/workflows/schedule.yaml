@@ -65,14 +65,8 @@ jobs:
             git push
           fi
 
-  trigger-release:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    needs: [update-and-test]
-    if: success()
-    steps:
       - name: Trigger release workflow
+        if: steps.update_and_test.outputs.test_passed == 'true'
         uses: peter-evans/repository-dispatch@v3
         with:
           event-type: trigger-release
