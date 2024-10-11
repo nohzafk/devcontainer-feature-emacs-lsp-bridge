@@ -7,7 +7,7 @@ emacs lsp-bridge {{cookiecutter.langserver}} language server environment install
 
 ```json
 "features": {
-    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/{{cookiecutter.langserver}}:0": {}
+    "ghcr.io/nohzafk/devcontainer-feature-emacs-lsp-bridge/{{cookiecutter.langserver}}:1": {}
 }
 ```
 
