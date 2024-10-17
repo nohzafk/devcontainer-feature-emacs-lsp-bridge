@@ -1,6 +1,6 @@
 {
   "id": "clojure-lsp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "name": "emacs lsp-bridge clojure-lsp language server",
   "description": "emacs lsp-bridge clojure-lsp language server environment installed by Nix Pacakge Manager",
   "options": {
