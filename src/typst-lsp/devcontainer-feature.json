@@ -1,6 +1,6 @@
 {
   "id": "typst-lsp",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "name": "emacs lsp-bridge typst-lsp language server",
   "description": "emacs lsp-bridge typst-lsp language server environment installed by Nix Pacakge Manager",
   "options": {
