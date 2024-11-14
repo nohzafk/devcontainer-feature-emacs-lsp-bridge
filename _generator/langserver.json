@@ -355,6 +355,11 @@
     "langserver_binary": "mono"
   },
   {
+    "langserver": "openscad-lsp",
+    "packages": "",
+    "langserver_binary": "openscad-lsp"
+  },
+  {
     "langserver": "perl-language-server",
     "packages": "perl538Packages.PerlLanguageServer",
     "langserver_binary": "perl"
