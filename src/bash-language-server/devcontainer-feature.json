@@ -1,6 +1,6 @@
 {
   "id": "bash-language-server",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "name": "emacs lsp-bridge bash-language-server language server",
   "description": "emacs lsp-bridge bash-language-server language server environment installed by Nix Pacakge Manager",
   "options": {

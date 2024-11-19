@@ -500,6 +500,11 @@
     "langserver_binary": "texlab"
   },
   {
+    "langserver": "tinymist",
+    "packages": "",
+    "langserver_binary": "tinymist"
+  },
+  {
     "langserver": "typescript",
     "packages": "nodePackages.typescript-language-server",
     "langserver_binary": "typescript-language-server"
