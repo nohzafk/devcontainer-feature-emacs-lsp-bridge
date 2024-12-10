@@ -1,6 +1,6 @@
 {
   "id": "futhark-lsp",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "name": "emacs lsp-bridge futhark-lsp language server",
   "description": "emacs lsp-bridge futhark-lsp language server environment installed by Nix Pacakge Manager",
   "options": {
