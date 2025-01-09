@@ -2,6 +2,11 @@
 
 cd ../
 
+if [ -n "$2" ]; then
+    echo "Invalidate hash, this will force lsp-bridge-src to download the latest lsp-bridge master branch"
+    sed -i 's|sha256 = .*|sha256 = "";|' "src/$1/lsp-bridge.nix"
+fi
+
 # Check if an argument is provided
 if [ -n "$1" ]; then
     # If an argument is provided, use it with the --features flag

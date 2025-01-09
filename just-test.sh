@@ -1,1 +1,0 @@
-npx just test

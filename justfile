@@ -5,7 +5,7 @@ generate:
     cd _generator && ./run_generator.sh
 
 # test an example feature
-test: generate
+test invalidate_hash="": generate
     #!/bin/bash
 
     # Function to extract the "got:" value followed by "specified:"
@@ -15,7 +15,7 @@ test: generate
 
     # Run the commands, display output in real-time, and capture the "got:" value
     got_value=$(
-        (cd _generator && ./test.sh basedpyright && ./test.sh typescript_eslint) 2>&1 |
+        (cd _generator && ./test.sh basedpyright {{invalidate_hash}} && ./test.sh typescript_eslint {{invalidate_hash}}) 2>&1 |
         tee >(cat >&2) |
         extract_got_value
     )

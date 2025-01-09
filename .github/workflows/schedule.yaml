@@ -35,7 +35,7 @@ jobs:
       - name: Update lsp-bridge.nix and run tests
         id: update_and_test
         run: |
-          if ! just test; then
+          if ! just test invalidate_hash; then
             echo "First test run failed, retrying..."
             if just test; then
               echo "Second test run succeeded"
