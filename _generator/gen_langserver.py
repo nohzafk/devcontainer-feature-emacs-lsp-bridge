@@ -52,7 +52,7 @@ def process(server_path, handler):
     # Iterate over JSON files in the 'langserver' directory
     for root, dirs, files in os.walk(server_path):
         for file in files:
-            if file.endswith(".json"):
+            if file.endswith(".json") and not file.endswith("_windows.json"):
                 json_file = os.path.join(root, file)
                 try:
                     handler(langaserver_map, json_file)
