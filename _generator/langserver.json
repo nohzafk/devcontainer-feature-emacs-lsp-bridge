@@ -5,6 +5,21 @@
     "langserver_binary": "ada_language_server"
   },
   {
+    "langserver": "angular-ls",
+    "packages": "angular-language-server",
+    "langserver_binary": "ngserver"
+  },
+  {
+    "langserver": "angular_template_html",
+    "packages": "angular-language-server,emmet-ls,vscode-langservers-extracted",
+    "langserver_binary": "emmet-ls,ngserver,vscode-html-language-server"
+  },
+  {
+    "langserver": "angular_template_typescript",
+    "packages": "angular-language-server,nodePackages.typescript-language-server",
+    "langserver_binary": "ngserver,typescript-language-server"
+  },
+  {
     "langserver": "ansible-language-server",
     "packages": "ansible-language-server",
     "langserver_binary": "ansible-language-server"
