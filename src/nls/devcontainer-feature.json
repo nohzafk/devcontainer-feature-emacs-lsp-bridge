@@ -1,6 +1,6 @@
 {
   "id": "nls",
-  "version": "1.0.42",
+  "version": "1.0.43",
   "name": "emacs lsp-bridge nls language server",
   "description": "emacs lsp-bridge nls language server environment installed by Nix Pacakge Manager",
   "options": {
