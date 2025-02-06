@@ -1,6 +1,6 @@
 {
   "id": "docker-langserver",
-  "version": "1.0.46",
+  "version": "1.0.47",
   "name": "emacs lsp-bridge docker-langserver language server",
   "description": "emacs lsp-bridge docker-langserver language server environment installed by Nix Pacakge Manager",
   "options": {
