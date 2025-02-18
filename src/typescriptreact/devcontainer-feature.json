@@ -1,6 +1,6 @@
 {
   "id": "typescriptreact",
-  "version": "1.0.55",
+  "version": "1.0.56",
   "name": "emacs lsp-bridge typescriptreact language server",
   "description": "emacs lsp-bridge typescriptreact language server environment installed by Nix Pacakge Manager",
   "options": {
