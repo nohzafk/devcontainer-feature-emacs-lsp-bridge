@@ -1,6 +1,6 @@
 {
   "id": "vim-language-server",
-  "version": "1.0.56",
+  "version": "1.0.57",
   "name": "emacs lsp-bridge vim-language-server language server",
   "description": "emacs lsp-bridge vim-language-server language server environment installed by Nix Pacakge Manager",
   "options": {
