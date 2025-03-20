@@ -505,6 +505,11 @@
     "langserver_binary": "tailwindcss-language-server"
   },
   {
+    "langserver": "taplo",
+    "packages": "",
+    "langserver_binary": "taplo"
+  },
+  {
     "langserver": "terraform-ls",
     "packages": "terraform-ls",
     "langserver_binary": "terraform-ls"
