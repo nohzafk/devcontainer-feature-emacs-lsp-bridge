@@ -1,6 +1,6 @@
 {
   "id": "html_emmet",
-  "version": "1.0.87",
+  "version": "1.0.88",
   "name": "emacs lsp-bridge html_emmet language server",
   "description": "emacs lsp-bridge html_emmet language server environment installed by Nix Pacakge Manager",
   "options": {
