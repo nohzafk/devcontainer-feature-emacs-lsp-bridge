@@ -325,6 +325,11 @@
     "langserver_binary": "move-analyzer"
   },
   {
+    "langserver": "neocmakelsp",
+    "packages": "",
+    "langserver_binary": "neocmakelsp"
+  },
+  {
     "langserver": "nextls",
     "packages": "",
     "langserver_binary": "nextls"
