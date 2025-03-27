@@ -1,6 +1,6 @@
 {
   "id": "jsonnet-language-server",
-  "version": "1.0.92",
+  "version": "1.0.93",
   "name": "emacs lsp-bridge jsonnet-language-server language server",
   "description": "emacs lsp-bridge jsonnet-language-server language server environment installed by Nix Pacakge Manager",
   "options": {
