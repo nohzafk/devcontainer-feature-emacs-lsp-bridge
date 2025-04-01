@@ -1,6 +1,6 @@
 {
   "id": "metals",
-  "version": "1.0.97",
+  "version": "1.0.98",
   "name": "emacs lsp-bridge metals language server",
   "description": "emacs lsp-bridge metals language server environment installed by Nix Pacakge Manager",
   "options": {
