@@ -1,6 +1,6 @@
 {
   "id": "dart-analysis-server",
-  "version": "1.0.111",
+  "version": "1.0.112",
   "name": "emacs lsp-bridge dart-analysis-server language server",
   "description": "emacs lsp-bridge dart-analysis-server language server environment installed by Nix Pacakge Manager",
   "options": {
