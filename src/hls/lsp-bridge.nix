@@ -2,7 +2,7 @@
 
 pkgs.stdenv.mkDerivation {
   pname = "lsp-bridge-src";
-  version = "20250418";
+  version = "20250419";
   src = pkgs.fetchFromGitHub {
     owner = "manateelazycat";
     repo = "lsp-bridge";

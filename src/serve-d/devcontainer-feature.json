@@ -1,6 +1,6 @@
 {
   "id": "serve-d",
-  "version": "1.0.115",
+  "version": "1.0.116",
   "name": "emacs lsp-bridge serve-d language server",
   "description": "emacs lsp-bridge serve-d language server environment installed by Nix Pacakge Manager",
   "options": {
