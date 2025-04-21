@@ -1,6 +1,6 @@
 {
   "id": "fsautocomplete",
-  "version": "1.0.116",
+  "version": "1.0.117",
   "name": "emacs lsp-bridge fsautocomplete language server",
   "description": "emacs lsp-bridge fsautocomplete language server environment installed by Nix Pacakge Manager",
   "options": {
