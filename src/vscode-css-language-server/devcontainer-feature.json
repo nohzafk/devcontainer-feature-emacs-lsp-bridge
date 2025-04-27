@@ -1,6 +1,6 @@
 {
   "id": "vscode-css-language-server",
-  "version": "1.0.122",
+  "version": "1.0.123",
   "name": "emacs lsp-bridge vscode-css-language-server language server",
   "description": "emacs lsp-bridge vscode-css-language-server language server environment installed by Nix Pacakge Manager",
   "options": {
