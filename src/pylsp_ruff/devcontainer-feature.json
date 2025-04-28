@@ -1,6 +1,6 @@
 {
   "id": "pylsp_ruff",
-  "version": "1.0.123",
+  "version": "1.0.124",
   "name": "emacs lsp-bridge pylsp_ruff language server",
   "description": "emacs lsp-bridge pylsp_ruff language server environment installed by Nix Pacakge Manager",
   "options": {
