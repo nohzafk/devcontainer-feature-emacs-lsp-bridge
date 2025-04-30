@@ -1,6 +1,6 @@
 {
   "id": "vscode-eslint-language-server",
-  "version": "1.0.125",
+  "version": "1.0.126",
   "name": "emacs lsp-bridge vscode-eslint-language-server language server",
   "description": "emacs lsp-bridge vscode-eslint-language-server language server environment installed by Nix Pacakge Manager",
   "options": {
