@@ -1,6 +1,6 @@
 {
   "id": "sumneko",
-  "version": "1.0.128",
+  "version": "1.0.129",
   "name": "emacs lsp-bridge sumneko language server",
   "description": "emacs lsp-bridge sumneko language server environment installed by Nix Pacakge Manager",
   "options": {
