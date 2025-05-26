@@ -1,6 +1,6 @@
 {
   "id": "erlang-ls",
-  "version": "1.0.151",
+  "version": "1.0.152",
   "name": "emacs lsp-bridge erlang-ls language server",
   "description": "emacs lsp-bridge erlang-ls language server environment installed by Nix Pacakge Manager",
   "options": {
