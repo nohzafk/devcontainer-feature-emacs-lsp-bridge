@@ -1,6 +1,6 @@
 {
   "id": "ccls",
-  "version": "1.0.153",
+  "version": "1.0.154",
   "name": "emacs lsp-bridge ccls language server",
   "description": "emacs lsp-bridge ccls language server environment installed by Nix Pacakge Manager",
   "options": {
