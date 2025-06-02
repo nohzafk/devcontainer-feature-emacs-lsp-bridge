@@ -1,6 +1,6 @@
 {
   "id": "marksman",
-  "version": "1.0.158",
+  "version": "1.0.159",
   "name": "emacs lsp-bridge marksman language server",
   "description": "emacs lsp-bridge marksman language server environment installed by Nix Pacakge Manager",
   "options": {
