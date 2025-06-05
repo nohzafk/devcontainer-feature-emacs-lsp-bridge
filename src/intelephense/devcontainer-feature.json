@@ -1,6 +1,6 @@
 {
   "id": "intelephense",
-  "version": "1.0.161",
+  "version": "1.0.162",
   "name": "emacs lsp-bridge intelephense language server",
   "description": "emacs lsp-bridge intelephense language server environment installed by Nix Pacakge Manager",
   "options": {

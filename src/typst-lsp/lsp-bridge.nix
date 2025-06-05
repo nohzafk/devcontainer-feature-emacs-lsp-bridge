@@ -2,12 +2,12 @@
 
 pkgs.stdenv.mkDerivation {
   pname = "lsp-bridge-src";
-  version = "20250604";
+  version = "20250605";
   src = pkgs.fetchFromGitHub {
     owner = "manateelazycat";
     repo = "lsp-bridge";
     rev = "master";
-    sha256 = "sha256-NcWsfVWV3ExId49j2FP9YDe+3+iY7njwX209QVFAWB0=";
+    sha256 = "sha256-8aeLfuj5aYj/1PCNd52Jxf8gzzKyNMZ6uyK9FbishHc=";
   };
   dontConfigure = true;
   doUnpack = true;
