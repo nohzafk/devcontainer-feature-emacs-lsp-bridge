@@ -1,6 +1,6 @@
 {
   "id": "elm-language-server",
-  "version": "1.0.169",
+  "version": "1.0.170",
   "name": "emacs lsp-bridge elm-language-server language server",
   "description": "emacs lsp-bridge elm-language-server language server environment installed by Nix Pacakge Manager",
   "options": {
