@@ -230,6 +230,11 @@
     "langserver_binary": "tailwindcss-language-server,vscode-html-language-server"
   },
   {
+    "langserver": "hyprls",
+    "packages": "",
+    "langserver_binary": "hyprls"
+  },
+  {
     "langserver": "intelephense",
     "packages": "nodePackages.intelephense",
     "langserver_binary": "intelephense"
