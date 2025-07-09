@@ -1,6 +1,6 @@
 {
   "id": "jedi_ruff",
-  "version": "1.0.194",
+  "version": "1.0.195",
   "name": "emacs lsp-bridge jedi_ruff language server",
   "description": "emacs lsp-bridge jedi_ruff language server environment installed by Nix Pacakge Manager",
   "options": {
