@@ -1,6 +1,6 @@
 {
   "id": "pyright-background-analysis",
-  "version": "1.0.197",
+  "version": "1.0.198",
   "name": "emacs lsp-bridge pyright-background-analysis language server",
   "description": "emacs lsp-bridge pyright-background-analysis language server environment installed by Nix Pacakge Manager",
   "options": {
