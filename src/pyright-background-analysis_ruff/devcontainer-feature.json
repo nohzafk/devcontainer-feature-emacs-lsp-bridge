@@ -1,6 +1,6 @@
 {
   "id": "pyright-background-analysis_ruff",
-  "version": "1.0.198",
+  "version": "1.0.199",
   "name": "emacs lsp-bridge pyright-background-analysis_ruff language server",
   "description": "emacs lsp-bridge pyright-background-analysis_ruff language server environment installed by Nix Pacakge Manager",
   "options": {
