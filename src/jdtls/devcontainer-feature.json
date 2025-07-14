@@ -1,6 +1,6 @@
 {
   "id": "jdtls",
-  "version": "1.0.199",
+  "version": "1.0.200",
   "name": "emacs lsp-bridge jdtls language server",
   "description": "emacs lsp-bridge jdtls language server environment installed by Nix Pacakge Manager",
   "options": {
