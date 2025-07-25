@@ -1,6 +1,6 @@
 {
   "id": "nil",
-  "version": "1.0.208",
+  "version": "1.0.209",
   "name": "emacs lsp-bridge nil language server",
   "description": "emacs lsp-bridge nil language server environment installed by Nix Pacakge Manager",
   "options": {
