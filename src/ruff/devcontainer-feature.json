@@ -1,6 +1,6 @@
 {
   "id": "ruff",
-  "version": "1.0.213",
+  "version": "1.0.214",
   "name": "emacs lsp-bridge ruff language server",
   "description": "emacs lsp-bridge ruff language server environment installed by Nix Pacakge Manager",
   "options": {
