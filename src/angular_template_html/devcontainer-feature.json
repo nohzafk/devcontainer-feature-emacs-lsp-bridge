@@ -1,6 +1,6 @@
 {
   "id": "angular_template_html",
-  "version": "1.0.216",
+  "version": "1.0.217",
   "name": "emacs lsp-bridge angular_template_html language server",
   "description": "emacs lsp-bridge angular_template_html language server environment installed by Nix Pacakge Manager",
   "options": {
