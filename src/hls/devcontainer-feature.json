@@ -1,6 +1,6 @@
 {
   "id": "hls",
-  "version": "1.0.219",
+  "version": "1.0.220",
   "name": "emacs lsp-bridge hls language server",
   "description": "emacs lsp-bridge hls language server environment installed by Nix Pacakge Manager",
   "options": {
