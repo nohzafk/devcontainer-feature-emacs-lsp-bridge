@@ -1,6 +1,6 @@
 {
   "id": "vscode-json-language-server",
-  "version": "1.0.226",
+  "version": "1.0.227",
   "name": "emacs lsp-bridge vscode-json-language-server language server",
   "description": "emacs lsp-bridge vscode-json-language-server language server environment installed by Nix Pacakge Manager",
   "options": {
