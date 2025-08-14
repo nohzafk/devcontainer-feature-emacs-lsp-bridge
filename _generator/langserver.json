@@ -170,6 +170,11 @@
     "langserver_binary": "fennel-ls"
   },
   {
+    "langserver": "fish-lsp",
+    "packages": "",
+    "langserver_binary": "fish-lsp"
+  },
+  {
     "langserver": "fortls",
     "packages": "fortls",
     "langserver_binary": "fortls"
