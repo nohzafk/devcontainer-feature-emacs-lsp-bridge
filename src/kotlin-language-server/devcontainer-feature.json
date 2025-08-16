@@ -1,6 +1,6 @@
 {
   "id": "kotlin-language-server",
-  "version": "1.0.229",
+  "version": "1.0.230",
   "name": "emacs lsp-bridge kotlin-language-server language server",
   "description": "emacs lsp-bridge kotlin-language-server language server environment installed by Nix Pacakge Manager",
   "options": {
