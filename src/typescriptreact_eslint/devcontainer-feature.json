@@ -1,6 +1,6 @@
 {
   "id": "typescriptreact_eslint",
-  "version": "1.0.230",
+  "version": "1.0.231",
   "name": "emacs lsp-bridge typescriptreact_eslint language server",
   "description": "emacs lsp-bridge typescriptreact_eslint language server environment installed by Nix Pacakge Manager",
   "options": {
