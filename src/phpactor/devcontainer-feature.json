@@ -1,6 +1,6 @@
 {
   "id": "phpactor",
-  "version": "1.0.242",
+  "version": "1.0.243",
   "name": "emacs lsp-bridge phpactor language server",
   "description": "emacs lsp-bridge phpactor language server environment installed by Nix Pacakge Manager",
   "options": {
