@@ -1,6 +1,6 @@
 {
   "id": "texlab",
-  "version": "1.0.252",
+  "version": "1.0.253",
   "name": "emacs lsp-bridge texlab language server",
   "description": "emacs lsp-bridge texlab language server environment installed by Nix Pacakge Manager",
   "options": {
