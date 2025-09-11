@@ -1,6 +1,6 @@
 {
   "id": "vale-ls",
-  "version": "1.0.255",
+  "version": "1.0.256",
   "name": "emacs lsp-bridge vale-ls language server",
   "description": "emacs lsp-bridge vale-ls language server environment installed by Nix Pacakge Manager",
   "options": {

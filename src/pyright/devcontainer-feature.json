@@ -1,6 +1,6 @@
 {
   "id": "pyright",
-  "version": "1.0.255",
+  "version": "1.0.256",
   "name": "emacs lsp-bridge pyright language server",
   "description": "emacs lsp-bridge pyright language server environment installed by Nix Pacakge Manager",
   "options": {
