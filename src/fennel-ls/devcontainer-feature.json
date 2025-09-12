@@ -1,6 +1,6 @@
 {
   "id": "fennel-ls",
-  "version": "1.0.256",
+  "version": "1.0.257",
   "name": "emacs lsp-bridge fennel-ls language server",
   "description": "emacs lsp-bridge fennel-ls language server environment installed by Nix Pacakge Manager",
   "options": {
