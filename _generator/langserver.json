@@ -470,6 +470,11 @@
     "langserver_binary": "rnix-lsp"
   },
   {
+    "langserver": "ruby-lsp",
+    "packages": "",
+    "langserver_binary": "ruby-lsp"
+  },
+  {
     "langserver": "ruff",
     "packages": "ruff-lsp",
     "langserver_binary": "ruff-lsp"
