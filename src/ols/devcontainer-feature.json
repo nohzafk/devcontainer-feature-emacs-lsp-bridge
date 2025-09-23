@@ -1,6 +1,6 @@
 {
   "id": "ols",
-  "version": "1.0.266",
+  "version": "1.0.267",
   "name": "emacs lsp-bridge ols language server",
   "description": "emacs lsp-bridge ols language server environment installed by Nix Pacakge Manager",
   "options": {
