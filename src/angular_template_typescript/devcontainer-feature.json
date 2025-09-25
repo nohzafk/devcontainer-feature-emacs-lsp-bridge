@@ -1,6 +1,6 @@
 {
   "id": "angular_template_typescript",
-  "version": "1.0.268",
+  "version": "1.0.269",
   "name": "emacs lsp-bridge angular_template_typescript language server",
   "description": "emacs lsp-bridge angular_template_typescript language server environment installed by Nix Pacakge Manager",
   "options": {
