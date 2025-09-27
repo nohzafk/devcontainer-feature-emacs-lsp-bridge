@@ -1,6 +1,6 @@
 {
   "id": "emmet-ls",
-  "version": "1.0.270",
+  "version": "1.0.271",
   "name": "emacs lsp-bridge emmet-ls language server",
   "description": "emacs lsp-bridge emmet-ls language server environment installed by Nix Pacakge Manager",
   "options": {

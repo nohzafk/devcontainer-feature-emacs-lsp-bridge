@@ -1,6 +1,6 @@
 {
   "id": "deno",
-  "version": "1.0.270",
+  "version": "1.0.271",
   "name": "emacs lsp-bridge deno language server",
   "description": "emacs lsp-bridge deno language server environment installed by Nix Pacakge Manager",
   "options": {
