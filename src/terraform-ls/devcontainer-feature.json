@@ -1,6 +1,6 @@
 {
   "id": "terraform-ls",
-  "version": "1.0.272",
+  "version": "1.0.273",
   "name": "emacs lsp-bridge terraform-ls language server",
   "description": "emacs lsp-bridge terraform-ls language server environment installed by Nix Pacakge Manager",
   "options": {
