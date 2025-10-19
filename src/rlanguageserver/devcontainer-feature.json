@@ -1,6 +1,6 @@
 {
   "id": "rlanguageserver",
-  "version": "1.0.292",
+  "version": "1.0.293",
   "name": "emacs lsp-bridge rlanguageserver language server",
   "description": "emacs lsp-bridge rlanguageserver language server environment installed by Nix Pacakge Manager",
   "options": {
