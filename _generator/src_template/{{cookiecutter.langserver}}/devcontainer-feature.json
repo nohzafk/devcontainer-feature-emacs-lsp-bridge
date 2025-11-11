@@ -1,6 +1,6 @@
 {
   "id": "{{cookiecutter.langserver}}",
-  "version": "1.0.315",
+  "version": "1.0.316",
   "name": "emacs lsp-bridge {{cookiecutter.langserver}} language server",
   "description": "emacs lsp-bridge {{cookiecutter.langserver}} language server environment installed by Nix Pacakge Manager",
   "options": {
