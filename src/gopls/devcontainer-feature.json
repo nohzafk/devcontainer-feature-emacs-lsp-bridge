@@ -1,6 +1,6 @@
 {
   "id": "gopls",
-  "version": "1.0.316",
+  "version": "1.0.317",
   "name": "emacs lsp-bridge gopls language server",
   "description": "emacs lsp-bridge gopls language server environment installed by Nix Pacakge Manager",
   "options": {
