@@ -1,6 +1,6 @@
 {
   "id": "yaml-language-server",
-  "version": "1.0.320",
+  "version": "1.0.321",
   "name": "emacs lsp-bridge yaml-language-server language server",
   "description": "emacs lsp-bridge yaml-language-server language server environment installed by Nix Pacakge Manager",
   "options": {
