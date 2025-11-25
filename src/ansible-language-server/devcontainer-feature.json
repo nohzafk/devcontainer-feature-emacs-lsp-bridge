@@ -1,6 +1,6 @@
 {
   "id": "ansible-language-server",
-  "version": "1.0.328",
+  "version": "1.0.329",
   "name": "emacs lsp-bridge ansible-language-server language server",
   "description": "emacs lsp-bridge ansible-language-server language server environment installed by Nix Pacakge Manager",
   "options": {
