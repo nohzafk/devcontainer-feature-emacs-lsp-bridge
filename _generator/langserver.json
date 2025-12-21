@@ -545,6 +545,11 @@
     "langserver_binary": "tinymist"
   },
   {
+    "langserver": "ty",
+    "packages": "",
+    "langserver_binary": "ty"
+  },
+  {
     "langserver": "typescript",
     "packages": "nodePackages.typescript-language-server",
     "langserver_binary": "typescript-language-server"
