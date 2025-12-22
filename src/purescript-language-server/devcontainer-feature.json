@@ -1,6 +1,6 @@
 {
   "id": "purescript-language-server",
-  "version": "1.0.355",
+  "version": "1.0.356",
   "name": "emacs lsp-bridge purescript-language-server language server",
   "description": "emacs lsp-bridge purescript-language-server language server environment installed by Nix Pacakge Manager",
   "options": {
