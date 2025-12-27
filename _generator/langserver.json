@@ -630,6 +630,11 @@
     "langserver_binary": "~/.nvm/versions/node/v9.11.2/bin/node"
   },
   {
+    "langserver": "vtsls",
+    "packages": "",
+    "langserver_binary": "vtsls"
+  },
+  {
     "langserver": "wxml-language-server",
     "packages": "",
     "langserver_binary": "wxml-langserver"
