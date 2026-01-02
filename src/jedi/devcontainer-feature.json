@@ -1,6 +1,6 @@
 {
   "id": "jedi",
-  "version": "1.0.366",
+  "version": "1.0.367",
   "name": "emacs lsp-bridge jedi language server",
   "description": "emacs lsp-bridge jedi language server environment installed by Nix Pacakge Manager",
   "options": {

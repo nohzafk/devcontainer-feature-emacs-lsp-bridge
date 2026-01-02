@@ -1,6 +1,6 @@
 {
   "id": "regal",
-  "version": "1.0.366",
+  "version": "1.0.367",
   "name": "emacs lsp-bridge regal language server",
   "description": "emacs lsp-bridge regal language server environment installed by Nix Pacakge Manager",
   "options": {
