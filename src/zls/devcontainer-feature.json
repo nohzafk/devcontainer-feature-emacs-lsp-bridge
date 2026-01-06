@@ -1,6 +1,6 @@
 {
   "id": "zls",
-  "version": "1.0.370",
+  "version": "1.0.371",
   "name": "emacs lsp-bridge zls language server",
   "description": "emacs lsp-bridge zls language server environment installed by Nix Pacakge Manager",
   "options": {
