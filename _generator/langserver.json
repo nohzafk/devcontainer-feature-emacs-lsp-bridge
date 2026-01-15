@@ -635,6 +635,11 @@
     "langserver_binary": "vtsls"
   },
   {
+    "langserver": "wasm-language-tools",
+    "packages": "",
+    "langserver_binary": "wat_server"
+  },
+  {
     "langserver": "wxml-language-server",
     "packages": "",
     "langserver_binary": "wxml-langserver"
