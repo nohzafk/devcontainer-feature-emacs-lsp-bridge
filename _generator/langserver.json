@@ -5,6 +5,11 @@
     "langserver_binary": "ada_language_server"
   },
   {
+    "langserver": "air",
+    "packages": "",
+    "langserver_binary": "air"
+  },
+  {
     "langserver": "angular-ls",
     "packages": "angular-language-server",
     "langserver_binary": "ngserver"
