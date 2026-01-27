@@ -1,6 +1,6 @@
 {
   "id": "angular-ls",
-  "version": "1.0.391",
+  "version": "1.0.392",
   "name": "emacs lsp-bridge angular-ls language server",
   "description": "emacs lsp-bridge angular-ls language server environment installed by Nix Pacakge Manager",
   "options": {
