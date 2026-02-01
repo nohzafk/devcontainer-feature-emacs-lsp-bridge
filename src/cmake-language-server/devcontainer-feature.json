@@ -1,6 +1,6 @@
 {
   "id": "cmake-language-server",
-  "version": "1.0.396",
+  "version": "1.0.397",
   "name": "emacs lsp-bridge cmake-language-server language server",
   "description": "emacs lsp-bridge cmake-language-server language server environment installed by Nix Pacakge Manager",
   "options": {
