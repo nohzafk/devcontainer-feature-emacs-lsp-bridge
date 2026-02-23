@@ -290,6 +290,11 @@
     "langserver_binary": "kotlin-language-server"
   },
   {
+    "langserver": "lean",
+    "packages": "",
+    "langserver_binary": "lake"
+  },
+  {
     "langserver": "lemminx",
     "packages": "lemminx",
     "langserver_binary": "lemminx"
