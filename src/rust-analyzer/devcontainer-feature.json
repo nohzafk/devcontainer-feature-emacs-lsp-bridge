@@ -1,6 +1,6 @@
 {
   "id": "rust-analyzer",
-  "version": "1.0.418",
+  "version": "1.0.419",
   "name": "emacs lsp-bridge rust-analyzer language server",
   "description": "emacs lsp-bridge rust-analyzer language server environment installed by Nix Pacakge Manager",
   "options": {
