@@ -1,6 +1,6 @@
 {
   "id": "svls",
-  "version": "1.0.423",
+  "version": "1.0.424",
   "name": "emacs lsp-bridge svls language server",
   "description": "emacs lsp-bridge svls language server environment installed by Nix Pacakge Manager",
   "options": {
