@@ -1,6 +1,6 @@
 {
   "id": "lemminx",
-  "version": "1.0.436",
+  "version": "1.0.437",
   "name": "emacs lsp-bridge lemminx language server",
   "description": "emacs lsp-bridge lemminx language server environment installed by Nix Pacakge Manager",
   "options": {
