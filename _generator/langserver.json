@@ -500,6 +500,11 @@
     "langserver_binary": "serve-d"
   },
   {
+    "langserver": "slint-lsp",
+    "packages": "",
+    "langserver_binary": "slint-lsp"
+  },
+  {
     "langserver": "solargraph",
     "packages": "rubyPackages.solargraph",
     "langserver_binary": "solargraph"
