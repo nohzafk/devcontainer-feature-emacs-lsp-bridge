@@ -135,6 +135,11 @@
     "langserver_binary": "deno"
   },
   {
+    "langserver": "dexter",
+    "packages": "",
+    "langserver_binary": "dexter"
+  },
+  {
     "langserver": "digestif",
     "packages": "",
     "langserver_binary": "digestif"
