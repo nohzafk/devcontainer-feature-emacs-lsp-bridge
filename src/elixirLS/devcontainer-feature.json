@@ -1,6 +1,6 @@
 {
   "id": "elixirLS",
-  "version": "1.0.492",
+  "version": "1.0.493",
   "name": "emacs lsp-bridge elixirLS language server",
   "description": "emacs lsp-bridge elixirLS language server environment installed by Nix Pacakge Manager",
   "options": {
