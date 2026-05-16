@@ -1,6 +1,6 @@
 {
   "id": "perl-language-server",
-  "version": "1.0.498",
+  "version": "1.0.499",
   "name": "emacs lsp-bridge perl-language-server language server",
   "description": "emacs lsp-bridge perl-language-server language server environment installed by Nix Pacakge Manager",
   "options": {

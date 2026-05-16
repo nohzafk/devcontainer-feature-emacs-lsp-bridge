@@ -1,6 +1,6 @@
 {
   "id": "pylsp",
-  "version": "1.0.498",
+  "version": "1.0.499",
   "name": "emacs lsp-bridge pylsp language server",
   "description": "emacs lsp-bridge pylsp language server environment installed by Nix Pacakge Manager",
   "options": {
