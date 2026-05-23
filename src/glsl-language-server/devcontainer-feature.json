@@ -1,6 +1,6 @@
 {
   "id": "glsl-language-server",
-  "version": "1.0.505",
+  "version": "1.0.506",
   "name": "emacs lsp-bridge glsl-language-server language server",
   "description": "emacs lsp-bridge glsl-language-server language server environment installed by Nix Pacakge Manager",
   "options": {
