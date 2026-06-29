@@ -1,6 +1,6 @@
 {
   "id": "csharp-ls",
-  "version": "1.0.541",
+  "version": "1.0.542",
   "name": "emacs lsp-bridge csharp-ls language server",
   "description": "emacs lsp-bridge csharp-ls language server environment installed by Nix Pacakge Manager",
   "options": {

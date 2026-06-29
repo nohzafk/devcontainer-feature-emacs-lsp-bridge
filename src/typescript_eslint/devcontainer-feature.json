@@ -1,6 +1,6 @@
 {
   "id": "typescript_eslint",
-  "version": "1.0.541",
+  "version": "1.0.542",
   "name": "emacs lsp-bridge typescript_eslint language server",
   "description": "emacs lsp-bridge typescript_eslint language server environment installed by Nix Pacakge Manager",
   "options": {
