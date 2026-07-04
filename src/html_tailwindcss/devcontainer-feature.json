@@ -1,6 +1,6 @@
 {
   "id": "html_tailwindcss",
-  "version": "1.0.546",
+  "version": "1.0.547",
   "name": "emacs lsp-bridge html_tailwindcss language server",
   "description": "emacs lsp-bridge html_tailwindcss language server environment installed by Nix Pacakge Manager",
   "options": {
