@@ -1,6 +1,6 @@
 {
   "id": "javascriptreact",
-  "version": "1.0.555",
+  "version": "1.0.556",
   "name": "emacs lsp-bridge javascriptreact language server",
   "description": "emacs lsp-bridge javascriptreact language server environment installed by Nix Pacakge Manager",
   "options": {
