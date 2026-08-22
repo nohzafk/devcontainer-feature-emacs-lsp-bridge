@@ -260,6 +260,26 @@
     "langserver_binary": "typescript-language-server"
   },
   {
+    "langserver": "javascript-deno",
+    "packages": "",
+    "langserver_binary": "deno"
+  },
+  {
+    "langserver": "javascript-deno-react",
+    "packages": "",
+    "langserver_binary": "deno"
+  },
+  {
+    "langserver": "javascript-go",
+    "packages": "",
+    "langserver_binary": "tsgo"
+  },
+  {
+    "langserver": "javascript-go-react",
+    "packages": "",
+    "langserver_binary": "tsgo"
+  },
+  {
     "langserver": "javascriptreact",
     "packages": "nodePackages.typescript-language-server",
     "langserver_binary": "typescript-language-server"
@@ -573,6 +593,26 @@
     "langserver": "typescript",
     "packages": "nodePackages.typescript-language-server",
     "langserver_binary": "typescript-language-server"
+  },
+  {
+    "langserver": "typescript-deno",
+    "packages": "",
+    "langserver_binary": "deno"
+  },
+  {
+    "langserver": "typescript-deno-react",
+    "packages": "",
+    "langserver_binary": "deno"
+  },
+  {
+    "langserver": "typescript-go",
+    "packages": "",
+    "langserver_binary": "tsgo"
+  },
+  {
+    "langserver": "typescript-go-react",
+    "packages": "",
+    "langserver_binary": "tsgo"
   },
   {
     "langserver": "typescript_eslint",
