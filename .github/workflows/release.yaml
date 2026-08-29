@@ -25,9 +25,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Keep the 7 latest feature release tags
+      - name: Keep the 3 latest feature release tags
         env:
-          KEEP_RELEASES: 7
+          KEEP_RELEASES: 3
         run: |
           set -euo pipefail
 
