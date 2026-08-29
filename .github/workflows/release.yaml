@@ -25,6 +25,44 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Keep the 7 latest feature release tags
+        env:
+          KEEP_RELEASES: 7
+        run: |
+          set -euo pipefail
+
+          mapfile -t tags < <(
+            git ls-remote --tags --refs origin 'refs/tags/feature_*' |
+              awk '$2 ~ /^refs\/tags\/feature_.+_[0-9]+\.[0-9]+\.[0-9]+$/ {
+                sub("refs/tags/", "", $2)
+                print $2
+              }'
+          )
+          mapfile -t versions < <(
+            printf '%s\n' "${tags[@]}" |
+              sed -nE 's/.*_([0-9]+\.[0-9]+\.[0-9]+)$/\1/p' |
+              sort -Vu |
+              tail -n "$KEEP_RELEASES"
+          )
+
+          declare -A keep=()
+          for version in "${versions[@]}"; do
+            keep["$version"]=1
+          done
+
+          old_tags=()
+          for tag in "${tags[@]}"; do
+            version=${tag##*_}
+            [[ ${keep[$version]:-} ]] || old_tags+=("$tag")
+          done
+
+          if ((${#old_tags[@]})); then
+            printf '%s\0' "${old_tags[@]}" |
+              xargs -0 -n 500 git push --quiet origin --delete
+          fi
+
+          echo "Kept ${#versions[@]} releases; deleted ${#old_tags[@]} tags."
+
       - name: Create PR for Documentation
         id: push_image_info
         env:
