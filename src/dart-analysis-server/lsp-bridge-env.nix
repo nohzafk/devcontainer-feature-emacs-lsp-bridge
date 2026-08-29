@@ -10,8 +10,9 @@ in pkgs.mkShell {
   buildInputs = [ lspBridgeSrc ];
 
   shellHook = ''
-    # Check if system Python is available
-    if command -v python3 &> /dev/null && command -v pip3 &>/dev/null; then
+    # Use system Python only when it supports the pinned dependencies.
+    if command -v python3 &> /dev/null && command -v pip3 &>/dev/null \
+      && python3 -c 'import sys; raise SystemExit(sys.version_info < (3, 10))'; then
       PYTHON_CMD="python3"
     else
       PYTHON_CMD="${pkgs.python3}/bin/python3"
