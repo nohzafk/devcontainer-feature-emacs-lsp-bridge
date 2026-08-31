@@ -1,6 +1,6 @@
 {
   "id": "nixd",
-  "version": "1.0.602",
+  "version": "1.0.603",
   "name": "emacs lsp-bridge nixd language server",
   "description": "emacs lsp-bridge nixd language server environment installed by Nix Pacakge Manager",
   "options": {
