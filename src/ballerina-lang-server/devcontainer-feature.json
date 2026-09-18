@@ -1,6 +1,6 @@
 {
   "id": "ballerina-lang-server",
-  "version": "1.0.620",
+  "version": "1.0.621",
   "name": "emacs lsp-bridge ballerina-lang-server language server",
   "description": "emacs lsp-bridge ballerina-lang-server language server environment installed by Nix Pacakge Manager",
   "options": {

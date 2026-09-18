@@ -435,6 +435,11 @@
     "langserver_binary": "phpactor"
   },
   {
+    "langserver": "powershell-editor-services",
+    "packages": "",
+    "langserver_binary": "pwsh"
+  },
+  {
     "langserver": "puppet-languageserver",
     "packages": "",
     "langserver_binary": "ruby"
