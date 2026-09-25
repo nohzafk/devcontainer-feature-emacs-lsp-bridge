@@ -1,6 +1,6 @@
 {
   "id": "ltex-ls",
-  "version": "1.0.626",
+  "version": "1.0.627",
   "name": "emacs lsp-bridge ltex-ls language server",
   "description": "emacs lsp-bridge ltex-ls language server environment installed by Nix Pacakge Manager",
   "options": {
