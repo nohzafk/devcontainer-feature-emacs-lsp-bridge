@@ -1,6 +1,6 @@
 {
   "id": "fortls",
-  "version": "1.0.637",
+  "version": "1.0.638",
   "name": "emacs lsp-bridge fortls language server",
   "description": "emacs lsp-bridge fortls language server environment installed by Nix Pacakge Manager",
   "options": {

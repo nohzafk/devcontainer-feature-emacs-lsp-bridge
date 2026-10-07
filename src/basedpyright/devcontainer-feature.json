@@ -1,6 +1,6 @@
 {
   "id": "basedpyright",
-  "version": "1.0.637",
+  "version": "1.0.638",
   "name": "emacs lsp-bridge basedpyright language server",
   "description": "emacs lsp-bridge basedpyright language server environment installed by Nix Pacakge Manager",
   "options": {
