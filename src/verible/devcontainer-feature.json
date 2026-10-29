@@ -1,6 +1,6 @@
 {
   "id": "verible",
-  "version": "1.0.659",
+  "version": "1.0.660",
   "name": "emacs lsp-bridge verible language server",
   "description": "emacs lsp-bridge verible language server environment installed by Nix Pacakge Manager",
   "options": {
